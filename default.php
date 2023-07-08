@@ -44,18 +44,9 @@
       <!--import _footer-->
       <?php require_once("engine/_footer.php"); ?>
        
-       <!--import product_register-->
-       <?php require_once("engine/_mdl_regproduct.php"); ?>
-      <!--import _mdl reg-->
+    
       <?php require_once("engine/_reg.php"); ?>
     
-      <!--import _product_delete-->
-      <?php require_once("engine/_product_delete_mdl.php"); ?>
-         <!--import _product_update-->
-         <?php require_once("engine/_update_mdl.php"); ?>
-       
-      <!--import _product_card-->
-      <?php require_once("engine/_modal_cart.php"); ?>
     
 
        

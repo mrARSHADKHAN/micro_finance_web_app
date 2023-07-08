@@ -1,20 +1,21 @@
 <!-- Nav Bar -->
-<link rel="stylesheet" href="style/base1.css">
+
 <?php
 $sql = "SELECT ID, test, link FROM tbl_menu";
 $result = $con->query($sql);
 ?>
 
   <div class="mynav1">
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-
-
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <div class="container">
+      <a href="/" class="navbar-brand mb-0 h1">Micro</a>
+    
       <!--  <div class="container">-->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-0 mb-lg-0">
           <!-- Showing Pages -->
           <?php
           $pages = glob('pages/*.php', GLOB_BRACE);
@@ -29,28 +30,11 @@ $result = $con->query($sql);
 
 
 
-          <li class="nav-item dropdown">
+         <!--  <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Product Registry</a>
             <ul class="dropdown-menu">
-
-
-              <!-- Product Register, Update, Delete -->
-              <?php
-              echo '<li><a class="dropdown-divider"></li>';
-
-
-              if (isset($_SESSION['uid'])) {
-                echo '<li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mdl_regproduct">Register Product</a></li>';
-                echo '<li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#update_product">Update Product</a></li>';
-                echo '<li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#product_delete">Delete Product</a></li>';
-                
-              } else {
-                echo '<li> <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#_modal_login">Login to continue</a></li>';
-              }
-              ?>
-              <!-- Product Register, Update, Delete END-->
             </ul>
-          </li>
+          </li> -->
           <!-- Login, Logout, Register -->
           <!--  echo '<button  type="submit" class="btn btn-outline-dark mr-1" aria-current="page" href="engine/logoffuser.php">Logout ' . $_SESSION["fname"] . '</a></u></li>';-->
           <?php
@@ -74,9 +58,8 @@ $result = $con->query($sql);
 
             echo ' </div>';
             echo '<form class="d-flex">';
-            echo '<button type="button" class="btn btn-outline-dark mr-1" data-bs-toggle="modal" data-bs-target="#_modal_login">Login</button>';
-
-            echo '<button type="button" class="btn btn-outline-dark mr-1" data-bs-toggle="modal" data-bs-target="#_modal_register">Register</button>';
+            echo '<button type="button" class="btn btn-outline-success me-2 my-2 my-sm-0" data-bs-toggle="modal" data-bs-target="#_modal_login">Login</button>';
+            echo '<button type="button" class="btn btn-outline-success my-2 my-sm-0" data-bs-toggle="modal" data-bs-target="#_modal_register">Register</button>';
             echo '</form>';
           }
 
@@ -88,6 +71,9 @@ $result = $con->query($sql);
       </div>
   </div>
   </div>
+    </div>
+   
+   
 
 </nav>
 <br>

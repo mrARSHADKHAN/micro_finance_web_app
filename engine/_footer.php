@@ -10,7 +10,7 @@
       </a>
     </div>
 
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+<!--     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
 
 
       <body>
@@ -145,7 +145,7 @@
 
 
 
-    </ul>
+    </ul> -->
 
 </div>
 
