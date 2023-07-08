@@ -1,7 +1,7 @@
   <!doctype html>
-  <link rel="stylesheet" href="style/base1.css">
+  <link href="css/style.css" rel="stylesheet">
   <html lang="en">
- 
+
   <?php session_start();
   ?>
   <?php if (isset($_GET['page'])) {
@@ -24,8 +24,7 @@
 
   </head>
 
-  <body>
-
+  <body class="main">
     <div class="content">
 
       <!--import _navbar-->
