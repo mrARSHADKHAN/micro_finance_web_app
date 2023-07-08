@@ -5,29 +5,6 @@ $sql = "SELECT ID, test, link FROM tbl_menu";
 $result = $con->query($sql);
 ?>
 
-  <div class="mynav">
-    <nav class="navbar navbar-light bg-light">
-      <!--  <div class="container">-->
-      <a class="navbar-brand" href="?page=Home.php">
-        <img src="/resources/images/Default_Carousel/E-M.jpg" alt="" width="120" height="90" class="d-inline-block align-text-middle"></a>
-    
-        <div class="searchbar">
-        <script async src="https://cse.google.com/cse.js?cx=989831cdfa5991d4b"></script>
-        <div class="gcse-search"></div>
-        </div>
-        </div>
-    
-      <!-- <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search products" aria-label="Search">
-        <button class="btn btn-outline-dark" type="submit">Search</button>
-      </form> 
-    </div> -->
-    
-    
-
-  </div>
-  </nav>
-
   <div class="mynav1">
     <nav class="navbar navbar-expand-lg navbar-light bg-warning">
 
