@@ -27,11 +27,10 @@
  <?php
               if (isset($_SESSION['uid'])) {
 
-                echo '<ul class="nav justify-content">';
-                echo '<li class="nav-item">';
-                echo '</div>';
+          /*       echo '<ul class="nav justify-content">';
+                echo '<li class="nav-item">'; */
                 echo '<form action="engine/logoffuser.php">';
-                echo '<input type="submit"class="btn btn-outline-dark me-1" value="Logout ' . $_SESSION["fname"] . '" />';
+                echo '<input type="submit"class="btn btn-outline-dark  px-2 my-sm-0 ms-3 me-2" value="Logout ' . $_SESSION["fname"] . '" />';
 
                 echo '<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>

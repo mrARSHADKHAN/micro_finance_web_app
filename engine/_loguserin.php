@@ -20,7 +20,7 @@ if ($result->num_rows == 1) {
     $_SESSION["join_on"] = $row["Joining"];
     $_SESSION["status"] = $row["status"];
     //echo('Login Successful');
-    header('Location: http://localhost/');
+    header('Location: http://localhost/admin/index.php');
 
 } else {
     //echo ('Somethings Wrong, Try again ');
