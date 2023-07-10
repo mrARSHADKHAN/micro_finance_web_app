@@ -21,16 +21,16 @@
         echo '<li class="nav-item">'; */
         echo '<li> <a class="nav-link active" aria-current="page" href="?page=' . $page . '">' . str_replace('.php', '', (str_replace('pages/', '', $page))) . '</a></li>';
      /*    echo '</ul>'; */
-      }
-
-      ?>
+      } 
+          ?>
+        
  <?php
               if (isset($_SESSION['uid'])) {
 
           /*       echo '<ul class="nav justify-content">';
                 echo '<li class="nav-item">'; */
                 echo '<form action="engine/logoffuser.php">';
-                echo '<input type="submit"class="btn btn-outline-dark  px-2 my-sm-0 ms-3 me-2" value="Logout ' . $_SESSION["fname"] . '" />';
+                echo '<input type="submit"class="btn btn-outline-white  px-2 my-sm-0 ms-5 me-2" value="Logout ' . $_SESSION["fname"] . '" />';
 
                 echo '<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
@@ -44,8 +44,8 @@
 
                 echo ' </div>';
                 echo '<form class="d-flex">';
-                echo '<button type="button" class="btn btn-outline-dark me-2  my-sm-0" data-bs-toggle="modal" data-bs-target="#_modal_login">Login</button>';
-                echo '<button type="button" class="btn btn-outline-dark my-sm-0" data-bs-toggle="modal" data-bs-target="#_modal_register">Register</button>';
+                echo '<button type="button" class="btn btn-outline-white ms-5 me-2  my-sm-0 " data-bs-toggle="modal" data-bs-target="#_modal_login">Login</button>';
+                echo '<button type="button" class="btn btn-outline-white px-0 my-sm-0 me-2" data-bs-toggle="modal" data-bs-target="#_modal_register">Register</button>';
                 echo '</form>';
               }
 
@@ -129,4 +129,5 @@
 
       </nav>
   <!-- </div> -->
-</header><!-- End Header -->
+</header>
+<!-- End Header -->
