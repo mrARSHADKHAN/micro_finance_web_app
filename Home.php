@@ -17,10 +17,12 @@
     <div class="col-12 hero-text-image">
       <div class="row">
         <div class="col-lg-8 text-center text-lg-start">
-          <h1 data-aos="fade-right">Promote Your App with SoftLand</h1>
-          <p class="mb-5" data-aos="fade-right" data-aos-delay="100">Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit.</p>
-          <p data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500"><a href="#" class="btn btn-outline-white">Get started</a></p>
+          <h1 data-aos="fade-right">MicroFin App!</h1>
+          <p class="mb-5" data-aos="fade-right" data-aos-delay="100">Empower your dreams with MicroFin, 
+            a cutting-edge web application designed to provide financial assistance and support to individuals 
+            and small businesses. Our user-friendly platform combines modern features, intuitive design,
+             and secure technology to make accessing microfinance services easier than ever before.</p>
+          <p data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500"><a href="" class="btn btn-outline-white"  data-bs-toggle="modal" data-bs-target="#_modal_login">Get started</a></p>
         </div>
         <div class="col-lg-4 iphone-wrap">
           <img src="img/phone_1.png" alt="Image" class="phone-1" data-aos="fade-right">
@@ -32,7 +34,6 @@
 </div>
 
 </section><!-- End Hero -->
-  <!--Begin Carousel-->
   <main id="main">
 
     <!-- ======= Home Section ======= -->
@@ -41,7 +42,7 @@
 
         <div class="row justify-content-center text-center mb-5">
           <div class="col-md-5" data-aos="fade-up">
-            <h2 class="section-heading">Save your time to using SoftLand</h2>
+            <h2 class="section-heading">Anyone can get a loan with MicroFinance</h2>
           </div>
         </div>
 
@@ -49,28 +50,60 @@
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="">
             <div class="feature-1 text-center">
               <div class="wrap-icon icon-1">
-                <i class="bi bi-people"></i>
+              <i class="bi bi-lightning-charge"></i>
               </div>
-              <h3 class="mb-3">Explore Your Team</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, optio.</p>
+              <h3 class="mb-3">Simplified Application Process</h3>
+              <p>Our streamlined application process allows you to apply for microloans or microsavings accounts in just a few clicks.
+                 Say goodbye to lengthy paperwork and time-consuming procedures.</p>
             </div>
           </div>
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
             <div class="feature-1 text-center">
               <div class="wrap-icon icon-1">
-                <i class="bi bi-brightness-high"></i>
+              <i class="bi bi-universal-access"></i>
               </div>
-              <h3 class="mb-3">Digital Whiteboard</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, optio.</p>
+              <h3 class="mb-3">Quick Approval</h3>
+              <p>With our advanced algorithms and automated verification systems, we ensure speedy loan approvals.
+                 Receive the funds you need, when you need them, to kick-start your entrepreneurial journey.</p>
             </div>
           </div>
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
             <div class="feature-1 text-center">
               <div class="wrap-icon icon-1">
-                <i class="bi bi-bar-chart"></i>
+              <i class="bi bi-cash"></i>
               </div>
-              <h3 class="mb-3">Design To Development</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, optio.</p>
+              <h3 class="mb-3">Flexible Repayment Options</h3>
+              <p> We understand the challenges of managing finances, which is why we offer flexible repayment options tailored to your unique circumstances. Pay back your loan in manageable installments that fit your budget.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-1 text-center">
+              <div class="wrap-icon icon-1">
+              <i class="bi bi-credit-card-2-back"></i>
+              </div>
+              <h3 class="mb-3">Financial Education</h3>
+              <p>At MicroFin, we believe in empowering our users with knowledge. Access our comprehensive financial education resources to enhance your financial literacy and make informed decisions.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-1 text-center">
+              <div class="wrap-icon icon-1">
+              <i class="bi bi-file-earmark-lock"></i>
+              </div>
+              <h3 class="mb-3">Secure and Private</h3>
+              <p>We take your privacy and security seriously. Our platform employs state-of-the-art encryption and security measures to safeguard your personal and financial information.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-1 text-center">
+              <div class="wrap-icon icon-1">
+              <i class="bi bi-headset"></i>
+              </div>
+              <h3 class="mb-3">Responsive Customer Support</h3>
+              <p>Our dedicated customer support team is available round-the-clock to assist you with any queries or concerns you may have. Experience prompt and reliable support whenever you need it.</p>
             </div>
           </div>
         </div>
@@ -105,7 +138,7 @@
           <div class="col-md-4">
             <div class="step">
               <span class="number">03</span>
-              <h3>Enjoy the app</h3>
+              <h3>Get the loan</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, optio.</p>
             </div>
           </div>
