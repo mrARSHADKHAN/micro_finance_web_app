@@ -4,7 +4,7 @@
     <div class="modal-content">
       <form action="engine/_createuser.php" method="POST">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Register to E-Market</h5>
+          <h2 class="fw-bold">Sign Up</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -14,7 +14,7 @@
 
 
           </div>
-          <br>
+
 
           <div class="form-floating mb-3">
             <input type="text" class="form-control" id="floatingInputlname" placeholder="Last Name" name="lname" required>
@@ -22,7 +22,7 @@
 
 
           </div>
-          <br>
+
           <div class="form-floating mb-3">
             <input type="email" class="form-control" id="floatingInputEmail" placeholder="Email Address" name="email" required>
             <label for="floatingInput">Email address</label>
@@ -30,7 +30,6 @@
 
 
           </div>
-          <br>
           <div class="form-floating mb-3">
             <input type="password" class="form-control" id="floatingInputpassword" placeholder="password" name="password" required>
             <label for="floatingInput">Password</label>
@@ -46,8 +45,8 @@
 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-outline-primary">Register</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Register</button>
         </div>
     </div>
     </form>

@@ -30,8 +30,6 @@
       <!--import _navbar-->
       <?php require_once("engine/_navbar.php"); ?>
 
-
-
       <!--import _script-->
       <?php require_once("engine/_script.php"); ?>
 
@@ -40,11 +38,12 @@
 
       <!--import _modal-->
       <?php require_once("engine/_modal_login.php"); ?>
+      
       <!--import _footer-->
       <?php require_once("engine/_footer.php"); ?>
-       
     
       <?php require_once("engine/_reg.php"); ?>
+      
     
     
 
