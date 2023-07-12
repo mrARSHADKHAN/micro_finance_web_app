@@ -170,28 +170,27 @@
             <div class="col-md-4 mb-4 mb-md-0">
               <h3>Navigation</h3>
               <ul class="list-unstyled">
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/pages/Services.php">Services</a></li>
+                <li><a href="/pages/About Us.php">About Us</a></li>
+                <li><a href="/pages/Contact Us.php">Contact</a></li>
               </ul>
             </div>
             <div class="col-md-4 mb-4 mb-md-0">
               <h3>Services</h3>
               <ul class="list-unstyled">
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Collaboration</a></li>
-                <li><a href="#">Todos</a></li>
-                <li><a href="#">Events</a></li>
+                <li><a href="#">Business Loan</a></li>
+                <li><a href="#">Vehicle Loan</a></li>
+                <li><a href="#">House Loan</a></li>
+                <li><a href="#">Pawning</a></li>
               </ul>
             </div>
-            <div class="col-md-4 mb-4 mb-md-0">
+           <!--  <div class="col-md-4 mb-4 mb-md-0">
               <h3>Downloads</h3>
               <ul class="list-unstyled">
                 <li><a href="#">Get from the App Store</a></li>
                 <li><a href="#">Get from the Play Store</a></li>
               </ul>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

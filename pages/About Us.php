@@ -26,3 +26,186 @@
       </div>
 
     </section>
+    <main id="main">
+
+    <!-- ======= Features Section ======= -->
+
+
+    <section class="section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 me-auto">
+            <h2 class="mb-4">Seamlessly Communicate</h2>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur at reprehenderit optio, laudantium eius quod, eum maxime molestiae porro omnis. Dolores aspernatur delectus impedit incidunt dolore mollitia esse natus beatae.</p>
+            <p><a href="#">Read More</a></p>
+          </div>
+          <div class="col-md-6" data-aos="fade-left">
+            <img src="img/undraw_svg_2.svg" alt="Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 ms-auto order-2">
+            <h2 class="mb-4">Gather Feedback</h2>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur at reprehenderit optio, laudantium eius quod, eum maxime molestiae porro omnis. Dolores aspernatur delectus impedit incidunt dolore mollitia esse natus beatae.</p>
+            <p><a href="#">Read More</a></p>
+          </div>
+          <div class="col-md-6" data-aos="fade-right">
+            <img src="img/undraw_svg_3.svg" alt="Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 me-auto">
+            <h2 class="mb-4">Present Designs Inspiration</h2>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur at reprehenderit optio, laudantium eius quod, eum maxime molestiae porro omnis. Dolores aspernatur delectus impedit incidunt dolore mollitia esse natus beatae.</p>
+            <p><a href="#">Read More</a></p>
+          </div>
+          <div class="col-md-6" data-aos="fade-left">
+            <img src="img/undraw_svg_3.svg" alt="Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 ms-auto order-2">
+            <h2 class="mb-4">Powerful App Design </h2>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur at reprehenderit optio, laudantium eius quod, eum maxime molestiae porro omnis. Dolores aspernatur delectus impedit incidunt dolore mollitia esse natus beatae.</p>
+            <p><a href="#">Read More</a></p>
+          </div>
+          <div class="col-md-6" data-aos="fade-right">
+            <img src="img/undraw_svg_4.svg" alt="Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Testimonials Section ======= -->
+    <section class="section border-top border-bottom">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-md-4">
+            <h2 class="section-heading">Review From Our Users</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-7">
+
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-wrapper">
+
+            <div class="row">
+            <div class="review text-center">
+                    <p class="stars">
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill muted"></span>
+                    </p>
+                    <h3>Excellent App!</h3>
+                    <blockquote>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ea delectus pariatur, numquam
+                        aperiam dolore nam optio dolorem facilis itaque voluptatum recusandae deleniti minus animi,
+                        provident voluptates consectetur maiores quos.</p>
+                    </blockquote>
+
+                    <p class="review-user">
+                      <img src="img/person_1.jpg" alt="Image" class="img-fluid rounded-circle mb-3">
+                      <span class="d-block">
+                        <span class="text-black">Jean Doe</span>, &mdash; App User
+                      </span>
+                    </p>
+
+                  </div>
+              <!-- End testimonial item -->
+                  
+                  <div class="review text-center">
+                    <p class="stars">
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill muted"></span>
+                    </p>
+                    <h3>This App is easy to use!</h3>
+                    <blockquote>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ea delectus pariatur, numquam
+                        aperiam dolore nam optio dolorem facilis itaque voluptatum recusandae deleniti minus animi,
+                        provident voluptates consectetur maiores quos.</p>
+                    </blockquote>
+
+                    <p class="review-user">
+                      <img src="img/person_2.jpg" alt="Image" class="img-fluid rounded-circle mb-3">
+                      <span class="d-block">
+                        <span class="text-black">Johan Smith</span>, &mdash; App User
+                      </span>
+                    </p>
+                  </div>
+
+                
+                <!-- End testimonial item -->
+
+                  <div class="review text-center">
+                    <p class="stars">
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill muted"></span>
+                    </p>
+                    <h3>Awesome functionality!</h3>
+                    <blockquote>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ea delectus pariatur, numquam
+                        aperiam dolore nam optio dolorem facilis itaque voluptatum recusandae deleniti minus animi,
+                        provident voluptates consectetur maiores quos.</p>
+                    </blockquote>
+
+                    <p class="review-user">
+                      <img src="img/person_3.jpg" alt="Image" class="img-fluid rounded-circle mb-3">
+                      <span class="d-block">
+                        <span class="text-black">Jean Thunberg</span>, &mdash; App User
+                      </span>
+                    </p>
+
+                  </div>
+               <!-- End testimonial item -->
+
+              </div>
+              <!-- <div class="swiper-pagination"></div>
+            </div> -->
+          
+
+            </div>
+            </div>
+        </div>
+      </div>
+    </section><!-- End Testimonials Section -->
+                  
+    <!-- ======= CTA Section ======= -->
+    <section class="section cta-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 me-auto text-center text-md-start mb-5 mb-md-0">
+            <h2>Starts Publishing Your Apps</h2>
+          </div>
+          <div class="col-md-5 text-center text-md-end">
+            <p><a href="#" class="btn d-inline-flex align-items-center"><i class="bx bxl-apple"></i><span>App store</span></a> <a href="#" class="btn d-inline-flex align-items-center"><i class="bx bxl-play-store"></i><span>Google play</span></a></p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End CTA Section -->
+
+  </main><!-- End #main -->
+
