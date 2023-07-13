@@ -26,6 +26,8 @@
 <script src="assets/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
 <!-- jQuery Knob Chart -->
 <script src="assets/plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- InputMask -->
+<script src="assets/plugins/inputmask/jquery.inputmask.min.js"></script>
 <!-- daterangepicker -->
 <script src="assets/plugins/moment/moment.min.js"></script>
 <script src="assets/plugins/daterangepicker/daterangepicker.js"></script>
@@ -41,5 +43,10 @@
 <!-- <script src="assets/js/demo.js"></script> -->
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="assets/js/pages/dashboard.js"></script>
+
+<?php  
+    include("includes/adv_script.php");
+?>
+
 </body>
 </html>
