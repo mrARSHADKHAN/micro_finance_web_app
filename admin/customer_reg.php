@@ -47,15 +47,6 @@
                                 </div>    
                             </div>
                         </div>
-
-                        <div class="form-group ">
-                            <label for="inputName">NIC</label>
-                            <input type="text" id="" class="form-control">
-                        </div>
-                        <div class="form-group ">
-                            <label for="inputName">Passport No.</label>
-                            <input type="text" id="inputName" class="form-control">
-                        </div>
                         <div class="form-group">
                             <label for="inputName">Address</label>
                             <input type="text" id="inputName" class="form-control">
