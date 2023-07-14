@@ -24,19 +24,19 @@
                                 <div class="col-sm-12 col-md-4 col-lg-4">
                                     <div class="form-group ">
                                         <label for="inputName">First Name</label>
-                                        <input type="text" id="inputName" class="form-control">
+                                        <input type="text" id="inputName" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-md-4 col-lg-4">
                                     <div class="form-group ">
                                         <label for="inputName">Middle Name</label>
-                                        <input type="text" id="inputName" class="form-control">
+                                        <input type="text" id="inputName" class="form-control" required>
                                     </div>    
                                 </div>
                                 <div class="col-sm-12 col-md-4 col-lg-4">
                                     <div class="form-group ">
                                         <label for="inputName">Last Name</label>
-                                        <input type="text" id="inputName" class="form-control">
+                                        <input type="text" id="inputName" class="form-control" required>
                                     </div>    
                                 </div>
                             </div>
@@ -100,29 +100,18 @@
                                 </div>
                             </div>
 
-                            <div class="form-group">
-                                <label for="inputName">Address</label>
-                                <input type="text" id="inputName" class="form-control">
-                            </div>
-
                             <div class="row">
-                                <div class="col-sm-12 col-md-4 col-lg-4">
-                                    <div class="form-group ">
-                                        <label for="inputName">City</label>
+                                <div class="col-sm-12 col-md-8 col-lg-8">
+                                    <div class="form-group">
+                                        <label for="inputName">Address</label>
                                         <input type="text" id="inputName" class="form-control">
                                     </div>    
                                 </div>
                                 <div class="col-sm-12 col-md-4 col-lg-4">
                                     <div class="form-group ">
-                                        <label for="inputName">District</label>
+                                        <label for="inputName">City/Town</label>
                                         <input type="text" id="inputName" class="form-control">
                                     </div>
-                                </div>
-                                <div class="col-sm-12 col-md-4 col-lg-4">
-                                    <div class="form-group ">
-                                        <label for="inputName">Province</label>
-                                        <input type="text" id="inputName" class="form-control">
-                                    </div>    
                                 </div>
                             </div>
 
@@ -131,7 +120,7 @@
 
                         <div class="card-footer">
                             <button type="submit" class="btn btn-info float-right">Save</button>
-                            <button type="submit" class="btn btn-default">Cancel</button>
+                            <button type="submit" class="btn btn-default">Clear</button>
                         </div>
                         <!-- /.card-footer -->
                     </form>

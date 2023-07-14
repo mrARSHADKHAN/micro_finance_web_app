@@ -34,7 +34,7 @@
           <div class="col-md-6" data-aos="fade-up">
 
             <h2>Contact Form</h2>
-            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis explicabo inventore.</p>
+            <!-- <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis explicabo inventore.</p> -->
           </div>
 
         </div>
