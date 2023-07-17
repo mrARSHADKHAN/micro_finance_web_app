@@ -48,60 +48,36 @@
 
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
+              <i class="nav-icon fas fa-dollar-sign"></i>
               <p>
-                Layout Options
+                Loans
                 <i class="fas fa-angle-left right"></i>
                 <span class="badge badge-info right">6</span>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation</p>
+                <a href="#" class="nav-link">
+                  <i class="far fa-fw nav-icon"></i>
+                  <p>Summary</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation + Sidebar</p>
+                <a href="#" class="nav-link">
+                  <i class="far fa-fw nav-icon"></i>
+                  <p>History</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/layout/boxed.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Boxed</p>
+                <a href="#" class="nav-link">
+                  <i class="far fa-fw nav-icon"></i>
+                  <p>Pay</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/layout/fixed-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Sidebar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Sidebar <small>+ Custom Area</small></p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-topnav.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Navbar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-footer.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Footer</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/collapsed-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Collapsed Sidebar</p>
+                <a href="#" class="nav-link">
+                  <i class="far fa-fw nav-icon"></i>
+                  <p>Apply For New Loan</p>
                 </a>
               </li>
             </ul>
@@ -109,37 +85,63 @@
 
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-edit"></i>
+              <i class="nav-icon fas fa-wallet"></i>
               <p>
-                Forms
+                Payments
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/forms/general.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>General Elements</p>
+                <a href="#" class="nav-link">
+                  <i class="far fa-fw nav-icon"></i>
+                  <p>Loan Payments</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/forms/advanced.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Advanced Elements</p>
+                <a href="#" class="nav-link">
+                  <i class="far fa-fw nav-icon"></i>
+                  <p>Pay</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/forms/editors.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Editors</p>
+                <a href="#" class="nav-link">
+                  <i class="far fa-fw nav-icon"></i>
+                  <p>Manage Payments</p>
+                </a>
+              </li>
+              
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-info-circle"></i>
+              <p>
+                Support
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-fw nav-icon"></i>
+                  <p>FAQs</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/forms/validation.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Validation</p>
+                <a href="#" class="nav-link">
+                  <i class="far fa-fw nav-icon"></i>
+                  <p>Contact Us</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-fw nav-icon"></i>
+                  <p>Help</p>
+                </a>
+              </li>
+              
             </ul>
           </li>
 
@@ -167,7 +169,7 @@
 
           <li class="nav-item">
             <a href="pages/calendar.html" class="nav-link">
-              <i class="fas fa-sign-out-alt nav-icon"></i>
+              <i class="fas fa-power-off nav-icon"></i>
               <p>
                 Sign Out
               </p>
