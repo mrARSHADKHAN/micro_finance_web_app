@@ -77,7 +77,7 @@
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-fw nav-icon"></i>
-                  <p>Apply For New Loan</p>
+                  <p>Apply for new Loan</p>
                 </a>
               </li>
             </ul>
@@ -124,13 +124,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="faq.php" class="nav-link">
                   <i class="far fa-fw nav-icon"></i>
                   <p>FAQs</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="contact_us.php" class="nav-link">
                   <i class="far fa-fw nav-icon"></i>
                   <p>Contact Us</p>
                 </a>
