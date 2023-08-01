@@ -10,16 +10,33 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
                     <!-- Showing Pages -->
+
+                
                     <?php
-                    $pages = glob('pages/*.php', GLOB_BRACE);
+                   $pages = glob('pages/*.php', GLOB_BRACE);
                     foreach ($pages as $page) {
                        
-                        echo '<li>';
-                          echo '<li><a class="nav-link active " aria-current="page" href="?page=' . $page . '">' . str_replace('.php', '', (str_replace('pages/', '', $page))) . '</a><li>';
-                       
-                       
-                    }
+                        echo '<li>';  
+                          echo '<li><a class="nav-link" aria-current="page" href="?page=' . $page . '">' . str_replace('.php', '', (str_replace('pages/', '', $page))) . '</a><li>';    
+                           
+                    } 
+                    
                     ?>
+                    <?php
+$pages = glob('services/*.php', GLOB_BRACE);
+?>
+<li class="dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Services
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+        <?php foreach ($pages as $page) : ?>
+            <?php $pageName = str_replace('.php', '', str_replace('services/', '', $page)); ?>
+            <li><a class="dropdown-item" href="?page=<?php echo $page; ?>"><?php echo $pageName; ?></a></li>
+        <?php endforeach; ?>
+    </ul>
+</li>
+
                     <?php
                     if (isset($_SESSION['uid'])) {
                         echo '<li>';

@@ -111,7 +111,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <!-- <section class="section">
 
       <div class="container">
         <div class="row justify-content-center text-center mb-5" data-aos="fade">
@@ -145,7 +145,7 @@
         </div>
       </div>
 
-    </section>
+    </section> -->
 
     <section class="section">
       <div class="container">
@@ -184,7 +184,7 @@
     <?php require_once("engine/reviews.php"); ?>
 
     <!-- ======= CTA Section ======= -->
-    <section class="section cta-section">
+    <!-- <section class="section cta-section">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6 me-auto text-center text-md-start mb-5 mb-md-0">
@@ -194,7 +194,7 @@
             <p><a href="#" class="btn d-inline-flex align-items-center"><i class="bx bxl-apple"></i><span>App store</span></a> <a href="#" class="btn d-inline-flex align-items-center"><i class="bx bxl-play-store"></i><span>Google play</span></a></p>
           </div>
         </div>
-      </div>
+      </div> -->
     </section><!-- End CTA Section -->
 
   </main><!-- End #main -->
