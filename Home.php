@@ -155,7 +155,7 @@
             <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur at reprehenderit optio,
               laudantium eius quod, eum maxime molestiae porro omnis. Dolores aspernatur delectus impedit incidunt
               dolore mollitia esse natus beatae.</p>
-            <p><a href="#" class="btn btn-primary">Download Now</a></p>
+            <p><a href="C:\xampp\htdocs\website\micro_finance_web_app\engine\_reg.php" class="btn btn-primary">Register Now</a></p>
           </div>
           <div class="col-md-6" data-aos="fade-left">
             <img src="img/undraw_svg_2.svg" alt="Image" class="img-fluid">
@@ -172,7 +172,7 @@
             <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur at reprehenderit optio,
               laudantium eius quod, eum maxime molestiae porro omnis. Dolores aspernatur delectus impedit incidunt
               dolore mollitia esse natus beatae.</p>
-            <p><a href="#" class="btn btn-primary">Download Now</a></p>
+            <p><a href="C:\xampp\htdocs\website\micro_finance_web_app\engine\_reg.php" class="btn btn-primary">Register Now</a></p>
           </div>
           <div class="col-md-6" data-aos="fade-right">
             <img src="img/undraw_svg_3.svg" alt="Image" class="img-fluid">

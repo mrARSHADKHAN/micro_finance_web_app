@@ -1,5 +1,5 @@
 <!-- Footer -->
-  <!--   <div class="container">
+<!--   <div class="container">
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <div class="col-md-4 d-flex align-items-center">
 
@@ -152,53 +152,56 @@
 </footer> -->
 <!-- ======= Footer ======= -->
 <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4 mb-md-0">
-          <h3>About MicroFapp</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ea delectus pariatur, numquam aperiam
-            dolore nam optio dolorem facilis itaque voluptatum recusandae deleniti minus animi.</p>
-          <p class="social">
-            <a href="#"><span class="bi bi-twitter"></span></a>
-            <a href="#"><span class="bi bi-facebook"></span></a>
-            <a href="#"><span class="bi bi-instagram"></span></a>
-            <a href="#"><span class="bi bi-linkedin"></span></a>
-          </p>
-        </div>
-        <div class="col-md-7 ms-auto">
-          <div class="row site-section pt-0">
-            <div class="col-md-4 mb-4 mb-md-0">
-              <h3>Navigation</h3>
-              <ul class="list-unstyled">
-                <li><a href="/pages/Services.php">Services</a></li>
-                <li><a href="/pages/About Us.php">About Us</a></li>
-                <li><a href="/pages/Contact Us.php">Contact</a></li>
-              </ul>
-            </div>
-            <div class="col-md-4 mb-4 mb-md-0">
-              <h3>Services</h3>
-              <ul class="list-unstyled">
-                <li><a href="#">Business Loan</a></li>
-                <li><a href="#">Vehicle Loan</a></li>
-                <li><a href="#">House Loan</a></li>
-                <li><a href="#">Pawning</a></li>
-              </ul>
-            </div>
-           <!--  <div class="col-md-4 mb-4 mb-md-0">
-              <h3>Downloads</h3>
-              <ul class="list-unstyled">
-                <li><a href="#">Get from the App Store</a></li>
-                <li><a href="#">Get from the Play Store</a></li>
-              </ul>
-            </div> -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h3>About MicroFapp</h3>
+        <p>Empower your dreams with MicroFin, a cutting-edge web application designed
+          to provide financial assistance and support to individuals and small businesses.
+          Our user-friendly platform combines modern features, intuitive design,
+          and secure technology to make accessing microfinance services easier than ever before.</p>
+        <p class="social">
+          <a href="#"><span class="bi bi-twitter"></span></a>
+          <a href="#"><span class="bi bi-facebook"></span></a>
+          <a href="#"><span class="bi bi-instagram"></span></a>
+          <a href="#"><span class="bi bi-linkedin"></span></a>
+        </p>
+      </div>
+      <div class="col-md-7 ms-auto">
+        <div class="row site-section pt-0">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h3>Navigation</h3>
+            <ul class="list-unstyled">
+              <li><a href="/pages/Services.php">Services</a></li>
+              <li><a href="/pages/About Us.php">About Us</a></li>
+              <li><a href="/pages/Contact Us.php">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h3>Services</h3>
+            <ul class="list-unstyled">
+              <li><a href="/services/Business Loans.php">Business Loan</a></li>
+              <li><a href="/services/Vehicle Loan.php">Vehicle Loan</a></li>
+              <li><a href="/services//Housing Loan.php">Housing Loan</a></li>
+              <li><a href="/services/Pawning .php">Pawning</a></li>
+            </ul>
+          </div>
+          <?php require_once("engine/_modal_login.php"); ?>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h3>To enjoy the fuctionalities</h3>
+            <ul class="list-unstyled">
+              <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#_modal_login">Login</button>
+              <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#_modal_register">Register</button>
+            </ul>
           </div>
         </div>
       </div>
-
-      <div class="row justify-content-center text-center">
-        <div class="col-md-7">
-          <p class="copyright">&copy; Copyright MicroFapp. All Rights Reserved</p>
-        </div>
-      </div>
-
     </div>
+
+    <div class="row justify-content-center text-center">
+      <div class="col-md-7">
+        <p class="copyright">&copy; Copyright MicroFapp. All Rights Reserved</p>
+      </div>
+    </div>
+
+  </div>

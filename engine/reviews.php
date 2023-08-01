@@ -22,7 +22,7 @@
                       <span class="bi bi-star-fill"></span>
                       <span class="bi bi-star-fill muted"></span>
                     </p>
-                    <h3>Excellent App!</h3>
+                    <h3>Excellent Application!</h3>
                     <blockquote>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ea delectus pariatur, numquam
                         aperiam dolore nam optio dolorem facilis itaque voluptatum recusandae deleniti minus animi,
@@ -32,7 +32,7 @@
                     <p class="review-user">
                       <img src="img/person_1.jpg" alt="Image" class="img-fluid rounded-circle mb-3">
                       <span class="d-block">
-                        <span class="text-black">Jean Doe</span>, &mdash; App User
+                        <span class="text-black">Jean Doe</span><!-- , &mdash;  -->
                       </span>
                     </p>
 
@@ -47,7 +47,7 @@
                       <span class="bi bi-star-fill"></span>
                       <span class="bi bi-star-fill muted"></span>
                     </p>
-                    <h3>This App is easy to use!</h3>
+                    <h3>This application is easy to use!</h3>
                     <blockquote>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ea delectus pariatur, numquam
                         aperiam dolore nam optio dolorem facilis itaque voluptatum recusandae deleniti minus animi,
@@ -57,7 +57,7 @@
                     <p class="review-user">
                       <img src="img/person_2.jpg" alt="Image" class="img-fluid rounded-circle mb-3">
                       <span class="d-block">
-                        <span class="text-black">Johan Smith</span>, &mdash; App User
+                        <span class="text-black">Johan Smith</span><!-- , &mdash;  -->
                       </span>
                     </p>
                   </div>
@@ -83,7 +83,7 @@
                     <p class="review-user">
                       <img src="img/person_3.jpg" alt="Image" class="img-fluid rounded-circle mb-3">
                       <span class="d-block">
-                        <span class="text-black">Jean Thunberg</span>, &mdash; App User
+                        <span class="text-black">Jean Thunberg</span><!-- , &mdash; -->
                       </span>
                     </p>
 
