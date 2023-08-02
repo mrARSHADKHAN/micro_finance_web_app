@@ -6,8 +6,8 @@ if ($_POST['password'] == $_POST['passwordV']) {
         VALUES (NULL, '" . $_POST['fname'] . "', '" . $_POST['lname'] . "', '" . $_POST['email'] . "', '" .($_POST['password']) . "',TIMESTAMP('" . date("Y-m-d", time()) . "'),'1')";
 
     if ($con->query($SQL) === TRUE) {
-        echo "New record created successfully";
-        header('Location: http://localhost/');
+        //echo "New record created successfully";
+        header('Location: http://localhost/websites/micro_finance_web_app/user/customer_reg.php');
     } else {
         echo ("Error : " . $SQL . "<br>" . $con->error);
     }

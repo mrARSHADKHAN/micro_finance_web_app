@@ -18,25 +18,25 @@
                     <!-- /.card-header -->
 
                     <!-- form start -->
-                    <form class="form-horizontal" method="POST" action="#">
+                    <form class="form-horizontal" method="POST" action="customer_reg_sql.php">
                         <div class="card-body" style="overflow: auto;">
                             <div class="row">
                                 <div class="col-sm-12 col-md-4 col-lg-4">
                                     <div class="form-group ">
                                         <label for="inputName">First Name</label>
-                                        <input type="text" id="inputName" class="form-control" required>
+                                        <input type="text" name="f_name" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-md-4 col-lg-4">
                                     <div class="form-group ">
                                         <label for="inputName">Middle Name</label>
-                                        <input type="text" id="inputName" class="form-control" required>
+                                        <input type="text" name="m_name" class="form-control">
                                     </div>    
                                 </div>
                                 <div class="col-sm-12 col-md-4 col-lg-4">
                                     <div class="form-group ">
                                         <label for="inputName">Last Name</label>
-                                        <input type="text" id="inputName" class="form-control" required>
+                                        <input type="text" name="l_name" class="form-control" required>
                                     </div>    
                                 </div>
                             </div>
@@ -46,7 +46,7 @@
                                     <!-- select -->
                                     <div class="form-group">
                                         <label>Gender</label>
-                                        <select class="form-control">
+                                        <select name="gender" class="form-control">
                                             <option>Male</option>
                                             <option>Female</option>
                                         </select>
@@ -58,7 +58,7 @@
                                     <div class="form-group">
                                     <label>Date of Birth</label>
                                         <div class="input-group date" id="reservationdate" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate"/>
+                                            <input type="text" name="dob" class="form-control datetimepicker-input" data-target="#reservationdate" required />
                                             <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
                                                 <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                                             </div>
@@ -74,13 +74,13 @@
                                 <div class="col-sm-12 col-md-6 col-lg-6">
                                     <div class="form-group ">
                                         <label for="inputName">NIC</label>
-                                        <input type="text" id="inputName" class="form-control">
+                                        <input type="text" name="nic" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-md-6 col-lg-6">
                                     <div class="form-group ">
                                         <label for="inputName">Passport No. <span style="font-size: 12px;" >(If available)</span></label>
-                                        <input type="text" id="inputName" class="form-control">
+                                        <input type="text" name="passport" class="form-control" required>
                                     </div>    
                                 </div>
                             </div>
@@ -89,13 +89,13 @@
                                 <div class="col-sm-12 col-md-4 col-lg-4">
                                     <div class="form-group ">
                                         <label for="inputName">Mobile No.</label>
-                                        <input type="text" id="inputName" class="form-control">
+                                        <input type="text" name="mobile" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-md-8 col-lg-8">
                                     <div class="form-group ">
                                         <label for="inputName">Email</label>
-                                        <input type="email" id="inputName" class="form-control">
+                                        <input type="email" name="email" class="form-control" required>
                                     </div>    
                                 </div>
                             </div>
@@ -104,13 +104,13 @@
                                 <div class="col-sm-12 col-md-8 col-lg-8">
                                     <div class="form-group">
                                         <label for="inputName">Address</label>
-                                        <input type="text" id="inputName" class="form-control">
+                                        <input type="text" name="address" class="form-control" required>
                                     </div>    
                                 </div>
                                 <div class="col-sm-12 col-md-4 col-lg-4">
                                     <div class="form-group ">
                                         <label for="inputName">City/Town</label>
-                                        <input type="text" id="inputName" class="form-control">
+                                        <input type="text" name="city" class="form-control" required>
                                     </div>
                                 </div>
                             </div>
