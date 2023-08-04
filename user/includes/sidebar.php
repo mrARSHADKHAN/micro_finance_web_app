@@ -37,7 +37,7 @@
                with font-awesome or any other icon font library -->
           
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link active">
+            <a href="dashboard.php" class="nav-link active">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Dashboard
@@ -136,9 +136,9 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="../default.php?page=pages/About Us.php" class="nav-link">
                   <i class="far fa-fw nav-icon"></i>
-                  <p>Help</p>
+                  <p>About</p>
                 </a>
               </li>
               
