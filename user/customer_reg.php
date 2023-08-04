@@ -80,7 +80,7 @@
                                 <div class="col-sm-12 col-md-6 col-lg-6">
                                     <div class="form-group ">
                                         <label for="inputName">Passport No. <span style="font-size: 12px;" >(If available)</span></label>
-                                        <input type="text" name="passport" class="form-control" required>
+                                        <input type="text" name="passport" class="form-control">
                                     </div>    
                                 </div>
                             </div>

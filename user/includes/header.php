@@ -28,5 +28,5 @@
   <!-- BS Stepper -->
   <link rel="stylesheet" href="../admin/assets/plugins/bs-stepper/css/bs-stepper.min.css">
 </head>
-<body class="hold-transition sidebar-mini layout-fixed sidebar-collapse">
+<body class="hold-transition sidebar-mini layout-navbar-fixed layout-fixed sidebar-collapse">
 <div class="wrapper">
