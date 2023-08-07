@@ -217,7 +217,7 @@
                                       <div class="icheck-primary">
                                           <input type="checkbox" id="agreeTerms" name="terms" value="agree" required>
                                           <label for="agreeTerms">
-                                          I agree to the <a href="#">terms & conditions</a>
+                                          I agree to the <a href="terms_condition.php">terms & conditions</a>
                                           </label>
                                       </div>
                                   </div>

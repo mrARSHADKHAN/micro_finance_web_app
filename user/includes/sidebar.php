@@ -63,7 +63,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="history.php" class="nav-link">
                   <i class="far fa-fw nav-icon"></i>
                   <p>History</p>
                 </a>
@@ -75,7 +75,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="apply_loan.php" class="nav-link">
                   <i class="far fa-fw nav-icon"></i>
                   <p>Apply for new Loan</p>
                 </a>
@@ -136,9 +136,9 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../default.php?page=pages/About Us.php" class="nav-link">
+                <a href="terms_condition.php" class="nav-link">
                   <i class="far fa-fw nav-icon"></i>
-                  <p>About</p>
+                  <p>Terms & conditions</p>
                 </a>
               </li>
               
