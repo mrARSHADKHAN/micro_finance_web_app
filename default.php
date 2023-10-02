@@ -1,4 +1,13 @@
-  <!doctype html>
+<?php
+
+// Check if the "status" parameter is set and equals "user_exit"
+if (isset($_GET['status']) && $_GET['status'] == 'user_exit') {
+    $message = "User already exists. Please choose a different username.";
+} 
+
+?>
+ 
+ <!doctype html>
   <link href="css/style.css" rel="stylesheet">
   <html lang="en">
 

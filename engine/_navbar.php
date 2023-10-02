@@ -35,7 +35,7 @@
                 <?php
                 if (isset($_SESSION['uid'])) {
                     echo '<li>';
-                    echo '<a class="nav-link active" aria-current="page" href="admin\register.php">Dashboard</a>';
+                    echo '<a class="nav-link active" aria-current="page" href="user/dashboard.php">Dashboard</a>';
                     echo '</li>';
                     echo '</ul>';
                     echo '<form action="engine/logoffuser.php">';

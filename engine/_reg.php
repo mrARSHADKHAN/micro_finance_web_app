@@ -8,6 +8,15 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
+          
+          <div class="form-floating mb-3">
+          <?php
+            if (!empty($message)) {
+                echo "<p id='message' style='color: red;' >$message</p>";
+            }
+          ?>
+          </div>
+
           <div class="form-floating mb-3">
             <input type="text" class="form-control" id="floatingInputfname" placeholder="First Name" name="fname" required>
             <label for="floatingInput">First Name</label>

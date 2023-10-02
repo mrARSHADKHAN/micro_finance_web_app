@@ -42,11 +42,10 @@
                                 <div class="callout callout-danger">
                                     <h5>For your information!</h5>
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                        To proceed, kindly ensure that all information provided is accurate and up-to-date.
                                         <br /> 
-                                        excepturi totam eveniet omnis corporis fugit quidem, iusto culpa 
-                                        accusantium rerum modi magnam velit officia aperiam laudantium 
-                                        provident facilis praesentium cum.
+                                        To expedite your application, please double-check and ensure that all details provided are correct. And 
+                                        for the best results, please make sure that the information you provide is accurate and current.
 
                                     </p>
                                 </div>
@@ -67,7 +66,7 @@
                                     </div>
                                   <div class="form-group">
                                       <label>Installment Plan</label>
-                                        <select name="loan_typ" class="form-control">
+                                        <select name="plan" class="form-control">
                                             <option>6 Month</option>
                                             <option>12 Month</option>
                                             <option>18 Month</option>
@@ -86,7 +85,7 @@
                                   </div>
                                   <div class="form-group">
                                       <label>Loan Purpose</label>
-                                      <input type="text" name="" class="form-control" placeholder="" required>
+                                      <input type="text" name="purpose" class="form-control" placeholder="" required>
                                   </div>
                                   
                               </div>
@@ -99,9 +98,9 @@
                                       <h5>For your information!</h5>
 
                                       <p>
-                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                                        Tell us about your loan requirements,
                                           <br /> 
-                                          excepturi totam eveniet omnis corporis fugit quidem, iusto culpa 
+                                          and the purpose of the loan.
                                       </p>
                                     </div>
                                 </div>
@@ -109,6 +108,53 @@
                             <!-- ./col-4 -->
                         </div>
                         <!-- end of row -->
+
+                        
+                        <!-- Bank Section -->
+                        <!-- ----------------- -->
+
+                        <div class="card-header" style="padding-bottom: 0px;">
+                        </div>
+                        <div class="card-body" style="padding-bottom: 0px;">
+                          <label style="color: grey;">Bank Details</label>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label>Bank Name</label>
+                                        <input type="text" name="bnk_name" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Account Type</label>
+                                        <select name="acc_typ" class="form-control">
+                                            <option>Savings Account</option>
+                                            <option>Current Account</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./col -->
+                            <div class="col-4">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label>Account Number</label>
+                                        <input type="number" name="acc_num" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./col-->
+                            <div class="col-4">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label>Branch</label>
+                                        <input type="text" name="branch" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./col -->
+                        </div>
 
                         <!-- Gurentar Section -->
                         <!-- ----------------- -->
@@ -124,11 +170,11 @@
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label>Full Name</label>
-                                        <input type="text" name="" class="form-control" required>
+                                        <input type="text" name="full_name" class="form-control" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Address</label>
-                                        <input type="text" name="" class="form-control" required>
+                                        <input type="text" name="address" class="form-control" required>
                                     </div>
                                 </div>
                             </div>
@@ -137,11 +183,11 @@
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label>NIC</label>
-                                        <input type="text" name="" class="form-control" required>
+                                        <input type="text" name="nic" class="form-control" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Email</label>
-                                        <input type="email" name="" class="form-control" required>
+                                        <input type="email" name="email" class="form-control" required>
                                     </div>
                                 </div>
                             </div>
@@ -150,11 +196,11 @@
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label>Contact No.</label>
-                                        <input type="number" name="" class="form-control" required>
+                                        <input type="number" name="contact" class="form-control" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Employment</label>
-                                        <input type="text" name="" class="form-control" required>
+                                        <input type="text" name="employment" class="form-control" required>
                                     </div>
                                 </div>
                             </div>
@@ -163,52 +209,6 @@
                         </div>
                         <!-- ./ row -->
 
-                        <!-- Bank Section -->
-                        <!-- ----------------- -->
-
-                        <div class="card-header" style="padding-bottom: 0px;">
-                        </div>
-                        <div class="card-body" style="padding-bottom: 0px;">
-                          <label style="color: grey;">Bank Details</label>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <label>Bank Name</label>
-                                        <input type="text" name="" class="form-control" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Account Type</label>
-                                        <select name="loan_typ" class="form-control">
-                                            <option>Savings Account</option>
-                                            <option>Current Account</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ./col -->
-                            <div class="col-4">
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <label>Account Number</label>
-                                        <input type="number" name="" class="form-control" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ./col-->
-                            <div class="col-4">
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <label>Branch</label>
-                                        <input type="text" name="" class="form-control" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ./col -->
-                            
-                        </div>
                         <!-- ./ row -->
                         <div class="row">
                           <div class="col-12">

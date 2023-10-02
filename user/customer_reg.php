@@ -1,7 +1,13 @@
 <?php
-  include("includes/header.php");
+    include("includes/header.php");
 //   include("includes/topbar.php");
 //   include("includes/sidebar.php");
+
+    //require("validate_user.php");
+    require_once("../engine/_db.php");
+
+    $user_id = $_SESSION["user_id"];
+
 ?>
 
 
@@ -95,7 +101,7 @@
                                 <div class="col-sm-12 col-md-8 col-lg-8">
                                     <div class="form-group ">
                                         <label for="inputName">Email</label>
-                                        <input type="email" name="email" class="form-control" required>
+                                        <input type="email" value="<?php echo $user_id ?>" name="email" class="form-control" disabled>
                                     </div>    
                                 </div>
                             </div>

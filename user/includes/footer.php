@@ -18,9 +18,9 @@
 <!-- Bootstrap 4 -->
 <script src="../admin/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- ChartJS -->
-<script src="../admin/assets/plugins/chart.js/Chart.min.js"></script>
+<!-- <script src="../admin/assets/plugins/chart.js/Chart.min.js"></script> -->
 <!-- Sparkline -->
-<script src="../admin/assets/plugins/sparklines/sparkline.js"></script>
+<!-- <script src="../admin/assets/plugins/sparklines/sparkline.js"></script> -->
 <!-- JQVMap -->
 <script src="../admin/assets/plugins/jqvmap/jquery.vmap.min.js"></script>
 <script src="../admin/assets/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
@@ -44,7 +44,7 @@
 <!-- AdminLTE for demo purposes -->
 <!-- <script src="../admin/assets/js/demo.js"></script> -->
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="../admin/assets/js/pages/dashboard.js"></script>
+<!-- <script src="../admin/assets/js/pages/dashboard.js"></script> -->
 
 <?php  
     include("includes/adv_script.php");

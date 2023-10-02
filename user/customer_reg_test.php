@@ -43,7 +43,7 @@
                             </div>
                         </div>
                         <div class="bs-stepper-content">
-                        <form method="POST" action="#">
+                        <form method="POST" action="test.php">
                             <!-- your steps content here -->
                             <div id="logins-part" class="content" role="tabpanel" aria-labelledby="logins-part-trigger">
                                 <div class="row">
