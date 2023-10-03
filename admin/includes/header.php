@@ -1,3 +1,12 @@
+<?php 
+    require("validate_user.php");
+
+    $user_id  = $_SESSION["user_id"];
+    $fname    = $_SESSION["fname"];
+    $lname    = $_SESSION["lname"];
+    $role     = $_SESSION['user_role']
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +23,7 @@
   <!-- Tempusdominus Bootstrap 4 -->
   <link rel="stylesheet" href="assets/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
   <!-- iCheck -->
-  <link rel="stylesheet" href="assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css"> -->
   <!-- JQVMap -->
   <link rel="stylesheet" href="assets/plugins/jqvmap/jqvmap.min.css">
   <!-- Theme style -->
@@ -28,5 +37,5 @@
   <!-- BS Stepper -->
   <link rel="stylesheet" href="assets/plugins/bs-stepper/css/bs-stepper.min.css">
 </head>
-<body class="hold-transition sidebar-mini layout-fixed sidebar-collapse">
+<body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">

@@ -32,7 +32,7 @@
     <section class="content">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-12">
 
             <!-- Profile Image -->
             <div class="card card-primary card-outline">
@@ -49,71 +49,13 @@
 
                 <ul class="list-group list-group-unbordered mb-3">
                   <li class="list-group-item">
-                    <b>Your Rating</b> <a class="float-right">1/10</a>
+                    <b>Your Role</b> <a class="float-right"><?php echo $role ?></a>
                   </li>
                 </ul>
 
                 <!-- <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a> -->
               </div>
               <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-          </div>
-          <!-- /.col -->
-
-          <div class="col-md-6">
-            <!-- About Me Box -->
-            <div class="card card-primary">
-              <div class="card-header">
-                <h3 class="card-title">About Me</h3>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-
-              <?php 
-                  $sql = "SELECT * FROM customer WHERE user_id='$user_id'";
-                  $result = $con->query($sql);
-
-                  if ($result->num_rows == 1) {
-                      $row = $result->fetch_assoc();
-              ?>
-
-                <strong>NIC Number</strong>
-
-                <p class="text-muted">
-                <?php echo $row['nic'] ?>
-                </p>
-
-                <hr>
-
-                <strong>Address</strong>
-
-                <p class="text-muted"> <?php echo $row['Address'] ?></p>
-
-                <hr>
-
-                <strong>City</strong>
-
-                <p class="text-muted">
-                  <span class="tag tag-danger"><?php echo $row['City'] ?> </span>
-                </p>
-
-                <hr>
-
-                <strong>Date of Birth</strong>
-
-                <p class="text-muted"><?php echo $row['dob'] ?></p>
-              </div>
-              <!-- /.card-body -->
-
-            <?php
-                }
-                else {
-                    echo ('Complete your personal details 
-                    <br />
-                    <a style="margin-top: 30px;" href="customer_reg.php" class="btn btn-warning btn-block">Go to Add Customer Details</a>');
-                }
-            ?>
             </div>
             <!-- /.card -->
           </div>

@@ -18,9 +18,9 @@
 <!-- Bootstrap 4 -->
 <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- ChartJS -->
-<script src="assets/plugins/chart.js/Chart.min.js"></script>
+<!-- <script src="assets/plugins/chart.js/Chart.min.js"></script> -->
 <!-- Sparkline -->
-<script src="assets/plugins/sparklines/sparkline.js"></script>
+<!-- <script src="assets/plugins/sparklines/sparkline.js"></script> -->
 <!-- JQVMap -->
 <script src="assets/plugins/jqvmap/jquery.vmap.min.js"></script>
 <script src="assets/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
@@ -38,13 +38,13 @@
 <!-- overlayScrollbars -->
 <script src="assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- BS-Stepper -->
-<script src="assets/plugins/bs-stepper/js/bs-stepper.min.js"></script>
+<!-- <script src="assets/plugins/bs-stepper/js/bs-stepper.min.js"></script> -->
 <!-- AdminLTE App -->
 <script src="assets/js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes -->
 <!-- <script src="assets/js/demo.js"></script> -->
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="assets/js/pages/dashboard.js"></script>
+<!-- <script src="assets/js/pages/dashboard.js"></script> -->
 
 <?php  
     include("includes/adv_script.php");

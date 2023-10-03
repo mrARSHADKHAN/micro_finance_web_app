@@ -42,11 +42,13 @@
 
 
     $_SESSION["loan_ref_num"] = $loan_ref_num;
+    $loan_date = date('Y-m-d');
     
 
-    $sql1  = "insert into loan (loan_ref_num,user_id,loan_typ,plan,loan_amt,purpose) values(";
+    $sql1  = "insert into loan (loan_ref_num,user_id,loan_date,loan_typ,plan,loan_amt,purpose) values(";
     $sql1 .= "'$loan_ref_num',";
     $sql1 .= "'$user_id',";
+    $sql1 .= "'$loan_date',";
     $sql1 .= "'$loan_typ',";
     $sql1 .= "'$plan',";
     $sql1 .= "$loan_amt,";

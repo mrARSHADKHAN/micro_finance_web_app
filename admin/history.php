@@ -15,7 +15,7 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Loans</a></li>
+              <li class="breadcrumb-item"><a href="#">Customers</a></li>
               <li class="breadcrumb-item active">History</li>
             </ol>
           </div><!-- /.col -->
@@ -30,7 +30,7 @@
           <!-- Default box -->
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Loans List</h3>
+              <h3 class="card-title">Records List</h3>
 
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -49,18 +49,19 @@
                               Reference No.
                           </th>
                           <th style="width: 20%">
+                              User ID
+                          </th>
+                          <th style="width: 20%">
                               Loan Type
                           </th>
                           <th style="width: 20%">
                               Loan Amount
                           </th>
                           <th>
-                              Payment Progress
+                              Progress
                           </th>
-                          <th style="width: 8%" class="text-center">
+                          <th style="width: 20%" class="text-center">
                               Status
-                          </th>
-                          <th style="width: 20%">
                           </th>
                         </tr>
                   </thead>
@@ -71,7 +72,7 @@
 
                             $user_id = $_SESSION['user_id'];
 
-                            $sql = "SELECT * FROM loan WHERE user_id='$user_id'";
+                            $sql = "SELECT * FROM loan";
                             $result = $con->query($sql);
 
                             if ($result->num_rows > 0) {
@@ -80,6 +81,9 @@
                                     <tr>
                                         <td>
                                             <?php echo $row['loan_ref_num'] ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $row['user_id'] ?>
                                         </td>
                                         <td>
                                             <a><?php echo $row['loan_typ'] ?></a>
@@ -109,18 +113,6 @@
                                                     echo '<span class="badge badge-danger">Rejected</span>';
                                                 }
                                             ?>
-                                        </td>
-                                        <td class="project-actions text-right">
-                                            <a class="btn btn-warning btn-sm" href="#">
-                                                <i class="fas fa-eye">
-                                                </i>
-                                                
-                                            </a>
-                                            <a class="btn btn-success btn-sm" href="#">
-                                                <i class="fas fa-credit-card">
-                                                </i>
-                                                
-                                            </a>
                                         </td>
                                     </tr>
                         <?php       

@@ -11,7 +11,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="../admin/assets/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="../admin/assets/img/user-default.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="profile.php" class="d-block"><?php echo $lname ?></a>
@@ -52,7 +52,6 @@
               <p>
                 Loans
                 <i class="fas fa-angle-left right"></i>
-                <span class="badge badge-info right">6</span>
               </p>
             </a>
             <ul class="nav nav-treeview">

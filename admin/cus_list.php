@@ -11,12 +11,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">History</h1>
+            <h1 class="m-0">Customers List</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Loans</a></li>
-              <li class="breadcrumb-item active">History</li>
+              <li class="breadcrumb-item"><a href="#">Customers</a></li>
+              <li class="breadcrumb-item active">Customers List</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -30,7 +30,7 @@
           <!-- Default box -->
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Loans List</h3>
+              <h3 class="card-title">Customers List</h3>
 
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -45,22 +45,23 @@
               <table class="table table-striped projects">
                   <thead>
                         <tr>
+                          <th style="width: 20%">
+                              User ID
+                          </th>
                           <th style="width: 15%">
-                              Reference No.
+                              Full Name
                           </th>
-                          <th style="width: 20%">
-                              Loan Type
-                          </th>
-                          <th style="width: 20%">
-                              Loan Amount
+                          <th style="width: 15%">
+                              NIC
                           </th>
                           <th>
-                              Payment Progress
+                              Address
                           </th>
-                          <th style="width: 8%" class="text-center">
-                              Status
+                          <th style="width: 15%">
+                              City
                           </th>
-                          <th style="width: 20%">
+                          <th style="width: 15%">
+                              Contact
                           </th>
                         </tr>
                   </thead>
@@ -71,7 +72,7 @@
 
                             $user_id = $_SESSION['user_id'];
 
-                            $sql = "SELECT * FROM loan WHERE user_id='$user_id'";
+                            $sql = "SELECT * FROM customer";
                             $result = $con->query($sql);
 
                             if ($result->num_rows > 0) {
@@ -79,48 +80,23 @@
                         ?>
                                     <tr>
                                         <td>
-                                            <?php echo $row['loan_ref_num'] ?>
+                                            <?php echo $row['user_id'] ?>
                                         </td>
                                         <td>
-                                            <a><?php echo $row['loan_typ'] ?></a>
-                                            <br/>
-                                            <small>Date : <?php echo $row['loan_date'] ?></small>
+                                            <a><?php echo $row['FirstName'] ?></a>
+                                            <?php echo $row['Surname'] ?>
                                         </td>
                                         <td>
-                                            <a>Rs. <?php echo $row['loan_amt'] ?></a>
+                                            <a><?php echo $row['nic'] ?></a>
                                         </td>
-                                        <td class="project_progress">
-                                            <div class="progress progress-sm">
-                                                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="<?php echo $row['percent'] ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['percent'] ?>%">
-                                                </div>
-                                            </div>
-                                            <small>
-                                            <?php echo $row['percent'] ?>% Complete
-                                            </small>
+                                        <td>
+                                            <a><?php echo $row['Address'] ?></a>
                                         </td>
-                                        <td class="project-state">
-                                            <?php
-                                                $status = intval($row['approve']);
-                                                if ($status === 0) {
-                                                    echo '<span class="badge badge-warning">Pending</span>';
-                                                } elseif ($status === 1) {
-                                                    echo '<span class="badge badge-success">Approved</span>';
-                                                } elseif ($status === 2) {
-                                                    echo '<span class="badge badge-danger">Rejected</span>';
-                                                }
-                                            ?>
+                                        <td>
+                                        <a><?php echo $row['City'] ?></a>
                                         </td>
-                                        <td class="project-actions text-right">
-                                            <a class="btn btn-warning btn-sm" href="#">
-                                                <i class="fas fa-eye">
-                                                </i>
-                                                
-                                            </a>
-                                            <a class="btn btn-success btn-sm" href="#">
-                                                <i class="fas fa-credit-card">
-                                                </i>
-                                                
-                                            </a>
+                                        <td>
+                                        <a><?php echo $row['mobile'] ?></a>
                                         </td>
                                     </tr>
                         <?php       

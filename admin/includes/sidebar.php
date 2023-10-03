@@ -1,3 +1,13 @@
+<?php
+require_once("../engine/_db.php");
+
+$sql = "SELECT * FROM loan WHERE approve='0'";
+$sr = $con->query($sql);
+$loan_req = mysqli_num_rows($sr);
+
+
+?>
+  
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-light-info elevation-4">
     <!-- Brand Logo -->
@@ -11,10 +21,10 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="assets/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="assets/img/user-default.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Martin</a>
+          <a href="#" class="d-block"><?php echo $lname ?></a>
         </div>
       </div>
 
@@ -37,7 +47,7 @@
                with font-awesome or any other icon font library -->
           
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link active">
+            <a href="dashboard.php" class="nav-link ">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Dashboard
@@ -48,36 +58,43 @@
 
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-dollar-sign"></i>
+              <i class="nav-icon fas fa-users"></i>
               <p>
-                Loans
+                Customers
                 <i class="fas fa-angle-left right"></i>
-                <span class="badge badge-info right">6</span>
+                <span class="badge badge-danger right"><?php echo $loan_req ?></span>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="cus_list.php" class="nav-link">
                   <i class="far fa-fw nav-icon"></i>
-                  <p>Summary</p>
+                  <p>Customer List</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="loan_request.php" class="nav-link">
+                  <i class="far fa-fw nav-icon"></i>
+                  <p>Loan Requests</p>
+                  <span class="badge badge-danger right"><?php echo $loan_req ?></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="history.php" class="nav-link">
                   <i class="far fa-fw nav-icon"></i>
                   <p>History</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="approved_loans.php" class="nav-link">
                   <i class="far fa-fw nav-icon"></i>
-                  <p>Pay</p>
+                  <p>Approved Loans</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="rejected_loans.php" class="nav-link">
                   <i class="far fa-fw nav-icon"></i>
-                  <p>Apply for new Loan</p>
+                  <p>Rejected Loans</p>
                 </a>
               </li>
             </ul>
@@ -159,7 +176,7 @@
 
           <li class="nav-header">Account</li>
           <li class="nav-item">
-            <a href="pages/calendar.html" class="nav-link">
+            <a href="profile.php" class="nav-link">
               <i class="fas fa-user nav-icon"></i>
               <p>
                 Profile
@@ -168,7 +185,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="pages/calendar.html" class="nav-link">
+            <a href="../engine/logoffuser.php" class="nav-link">
               <i class="fas fa-power-off nav-icon"></i>
               <p>
                 Sign Out
