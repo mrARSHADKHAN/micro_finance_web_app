@@ -65,12 +65,14 @@
                                         </select>
                                     </div>
                                   <div class="form-group">
-                                      <label>Installment Plan</label>
+                                      <label>Installment Plan (Month)</label>
                                         <select name="plan" class="form-control">
-                                            <option>6 Month</option>
-                                            <option>12 Month</option>
-                                            <option>18 Month</option>
-                                            <option>24 Month</option>
+                                            <option>6</option>
+                                            <option>12</option>
+                                            <option>18</option>
+                                            <option>24</option>
+                                            <option>30</option>
+                                            <option>36</option>
                                         </select>
                                   </div>
                               </div>

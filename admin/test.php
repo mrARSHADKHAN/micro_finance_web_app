@@ -1,3 +1,21 @@
 <?php
-    echo "<p>{$row['id']} - {$row['name']} - <form method='post' action='delete.php'><input type='hidden' name='id' value='{$row['id']}'><button type='submit' name='delete'>Delete</button></form></p>";
+
+$dateApproved = date('Y-m-d');
+$installments = '6';
+
+// Convert the string date to a DateTime object
+$dateTime = new DateTime($dateApproved);
+
+echo "Installment Dates:<br>";
+
+for ($i = 1; $i <= $installments; $i++) {
+    // Add the current installment month to the date
+    $dateTime->add(new DateInterval("P1M"));
+
+    // Format and print the resulting date
+    $installmentDate = $dateTime->format('Y-m-d');
+    echo "Installment $i: $installmentDate<br>";
+}
+
+
 ?>

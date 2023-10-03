@@ -56,21 +56,15 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="approved_loans.php" class="nav-link">
                   <i class="far fa-fw nav-icon"></i>
-                  <p>Summary</p>
+                  <p>Approved Loans</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="history.php" class="nav-link">
                   <i class="far fa-fw nav-icon"></i>
                   <p>History</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-fw nav-icon"></i>
-                  <p>Pay</p>
                 </a>
               </li>
               <li class="nav-item">
