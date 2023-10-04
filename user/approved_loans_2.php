@@ -81,7 +81,7 @@
                     <!-- <span class="info-box-icon bg-success elevation-1"><i class="fas fa-shopping-cart"></i></span> -->
 
                     <div class="info-box-content">
-                        <span class="info-box-text">Installment :</span>
+                        <span class="info-box-text">Installment Plan :</span>
                         <span class="info-box-number"><?php echo $row['installments'] ?> Months</span>
                     </div>
                     <!-- /.info-box-content -->
@@ -137,7 +137,8 @@
                         <div class="description-block">
                         <!-- <h5 class="description-header">Personal Loan</h5>
                         <span class="description-text">LOAN TYPE</span> -->
-                        <button type="button" class="btn btn-block bg-gradient-warning font-weight-bold">Pay Now</button>
+                        <!-- <button type="button" class="btn btn-block bg-gradient-warning font-weight-bold">Pay Now</button> -->
+                        <a href="#" class="btn btn-block bg-gradient-warning font-weight-bold">Pay Now</a>
                         </div>
                         <!-- /.description-block -->
                     </div>
@@ -201,7 +202,7 @@
                             <tbody>
                             <tr>
                                 <td>
-                                <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
+                                <img src="" alt="Product 1" class="img-circle img-size-32 mr-2">
                                 Some Product
                                 </td>
                                 <td>$13 USD</td>
@@ -220,7 +221,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
+                                <img src="" alt="Product 1" class="img-circle img-size-32 mr-2">
                                 Another Product
                                 </td>
                                 <td>$29 USD</td>
@@ -239,7 +240,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
+                                <img src="" alt="Product 1" class="img-circle img-size-32 mr-2">
                                 Amazing Product
                                 </td>
                                 <td>$1,230 USD</td>
@@ -258,7 +259,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
+                                <img src="" alt="Product 1" class="img-circle img-size-32 mr-2">
                                 Perfect Item
                                 <span class="badge bg-danger">NEW</span>
                                 </td>
