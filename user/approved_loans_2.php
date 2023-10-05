@@ -135,10 +135,14 @@
                     <!-- /.col -->
                     <div class="col-sm-3 col-6">
                         <div class="description-block">
-                        <!-- <h5 class="description-header">Personal Loan</h5>
-                        <span class="description-text">LOAN TYPE</span> -->
+                        <?php
+                            echo "<form method='POST' action='approved_loans_3.php'>";
+                            echo "<input type='hidden' name='loan_ref_num' value='{$row['loan_ref_num']}'>";
+                            echo "<button type='submit' class='btn btn-block bg-gradient-warning font-weight-bold'>Pay Now</button>";
+                            echo "</form></p>";
+                        ?>
                         <!-- <button type="button" class="btn btn-block bg-gradient-warning font-weight-bold">Pay Now</button> -->
-                        <a href="#" class="btn btn-block bg-gradient-warning font-weight-bold">Pay Now</a>
+                        <!-- <a href="#" class="btn btn-block bg-gradient-warning font-weight-bold">Pay Now</a> -->
                         </div>
                         <!-- /.description-block -->
                     </div>

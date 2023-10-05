@@ -123,4 +123,22 @@ $(function () {
 
   })
 
+
+  function formatCardNumber() {
+  // Get the input element
+  var cardNumberInput = document.getElementById('visaCardNumber');
+  
+  // Remove non-numeric characters
+  var cleanedNumber = cardNumberInput.value.replace(/\D/g, '');
+
+  // Limit the input to 16 numbers
+  cleanedNumber = cleanedNumber.slice(0, 16);
+
+  // Split the number into groups of four digits
+  var formattedNumber = cleanedNumber.replace(/(\d{4})/g, '$1 ');
+
+  // Update the input value
+  cardNumberInput.value = formattedNumber.trim();
+}
+
 </script>
