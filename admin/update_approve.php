@@ -39,7 +39,7 @@ if (isset($_REQUEST['setStatus'])) {
                 // Format the resulting date as a string
                 $due_date = $dateTime->format('Y-m-d');
                 
-                $sql3  = "insert into approved_loans (user_id,loan_ref_num,loan_amt,loan_typ,installments,due,date_approved,due_date) values(";
+                $sql3  = "insert into approved_loans (user_id,loan_ref_num,loan_amt,loan_typ,installments,due,date_approved,ins_date,due_date) values(";
                 $sql3 .= "'$user_id',";
                 $sql3 .= "'$loan_ref_num',";
                 $sql3 .= "$loan_amt,";
@@ -47,6 +47,7 @@ if (isset($_REQUEST['setStatus'])) {
                 $sql3 .= "$installments,";
                 $sql3 .= "$loan_amt,";
                 $sql3 .= "'$date_approved',";
+                $sql3 .= "$ins_date,";
                 $sql3 .= "'$due_date')";
 
                 // echo $sql3;

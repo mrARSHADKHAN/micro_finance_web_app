@@ -55,7 +55,7 @@
                               Loan Amount
                           </th>
                           <th>
-                              Payment Progress
+                              Date
                           </th>
                           <th style="width: 8%" class="text-center">
                               Status
@@ -83,20 +83,12 @@
                                         </td>
                                         <td>
                                             <a><?php echo $row['loan_typ'] ?></a>
-                                            <br/>
-                                            <small>Date : <?php echo $row['loan_date'] ?></small>
                                         </td>
                                         <td>
                                             <a>Rs. <?php echo $row['loan_amt'] ?></a>
                                         </td>
-                                        <td class="project_progress">
-                                            <div class="progress progress-sm">
-                                                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="<?php echo $row['percent'] ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['percent'] ?>%">
-                                                </div>
-                                            </div>
-                                            <small>
-                                            <?php echo $row['percent'] ?>% Complete
-                                            </small>
+                                        <td>
+                                            <a><?php echo $row['loan_date'] ?></a>
                                         </td>
                                         <td class="project-state">
                                             <?php
@@ -107,10 +99,12 @@
                                                     echo '<span class="badge badge-success">Approved</span>';
                                                 } elseif ($status === 2) {
                                                     echo '<span class="badge badge-danger">Rejected</span>';
+                                                } elseif ($status === 3) {
+                                                  echo '<span class="badge badge-light">Completed</span>';
                                                 }
                                             ?>
                                         </td>
-                                        <td class="project-actions text-right">
+                                        <td class="project-actions text-right" style="display: flex; float: right;">
                                             <?php
                                                 echo "<form method='POST' action='approved_loans_2.php'>";
                                                 echo "<input type='hidden' name='loan_ref_num' value='{$row['loan_ref_num']}'>";

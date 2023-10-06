@@ -30,7 +30,7 @@
       <!-- Default box -->
       <div class="card">
         <div class="card-body row">
-          <div class="col-5 text-center d-flex align-items-center justify-content-center">
+          <div class="col-12 text-center d-flex align-items-center justify-content-center">
             <div class="">
               <h2>Micro<strong>Fin</strong>App</h2>
               <p class="lead mb-5">123 Testing Ave, Testtown, 9876 NA<br>
@@ -38,7 +38,7 @@
               </p>
             </div>
           </div>
-          <div class="col-7">
+          <!-- <div class="col-7">
             <div class="form-group">
               <label for="inputName">Name</label>
               <input type="text" id="inputName" class="form-control" />
@@ -58,7 +58,7 @@
             <div class="form-group">
               <input type="submit" class="btn btn-primary" value="Send message">
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 

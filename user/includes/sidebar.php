@@ -41,7 +41,7 @@
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Dashboard
-                <span class="right badge badge-danger">New</span>
+                <!-- <span class="right badge badge-danger">New</span> -->
               </p>
             </a>
           </li>
@@ -107,6 +107,8 @@
             </ul>
           </li>
 
+          <li class="nav-header">Help</li>
+
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-info-circle"></i>
@@ -138,18 +140,6 @@
             </ul>
           </li>
 
-          <li class="nav-header">Tools</li>
-
-          <li class="nav-item">
-            <a href="pages/calendar.html" class="nav-link">
-              <i class="nav-icon far fa-calendar-alt"></i>
-              <p>
-                Calendar
-                <span class="badge badge-info right">2</span>
-              </p>
-            </a>
-          </li>
-
           <li class="nav-header">Account</li>
           <li class="nav-item">
             <a href="profile.php" class="nav-link">
@@ -160,7 +150,7 @@
             </a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item" onclick="return confirm('Are you sure you want to logout?')">
             <a href="../engine/logoffuser.php" class="nav-link">
               <i class="fas fa-power-off nav-icon"></i>
               <p>

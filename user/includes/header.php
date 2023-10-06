@@ -1,5 +1,5 @@
 <?php 
-    session_start();
+    require("validate_user.php");
 
     $user_id = $_SESSION["user_id"];
     $fname = $_SESSION["fname"];

@@ -1,6 +1,6 @@
 <?php
 
-    session_start();
+    require("validate_user.php");
 
     //require("validate_user.php");
     require_once("../engine/_db.php");

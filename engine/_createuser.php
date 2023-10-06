@@ -37,7 +37,8 @@ if ($_POST['password'] == $_POST['passwordV']) {
 
 
 } else {
-    echo 'Password do not match';
+    // echo 'Password do not match';
     // header('location:javascript://history.go(-1)');
+    header('Location: http://localhost/websites/micro_finance_web_app/?status=not_match');
 }
 

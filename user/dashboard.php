@@ -26,20 +26,21 @@
 
     <section class="content">
       <div class="container-fluid">
+
         <!-- Small boxes (Stat box) -->
         <div class="row">
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>150</h3>
+                <h3>Loan</h3>
 
-                <p>New Orders</p>
+                <p>Approved Loans</p>
               </div>
               <div class="icon">
-                <i class="ion ion-bag"></i>
+                <i class="ion ion-pie-graph"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="approved_loans.php" class="small-box-footer">VIEW <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -47,14 +48,14 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>53<sup style="font-size: 20px">%</sup></h3>
+                <h3>Apply</h3>
 
-                <p>Bounce Rate</p>
+                <p>New Loan</p>
               </div>
               <div class="icon">
-                <i class="ion ion-stats-bars"></i>
+              <i class="fas fa-hand-holding-usd"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="apply_loan.php" class="small-box-footer">VIEW <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -62,14 +63,14 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>44</h3>
+                <h3>Pay</h3>
 
-                <p>User Registrations</p>
+                <p>Manage Cards</p>
               </div>
               <div class="icon">
-                <i class="ion ion-person-add"></i>
+                <i class="fab fa-cc-visa"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="cards.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -77,65 +78,44 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>65</h3>
+                <h3>Profile</h3>
 
-                <p>Unique Visitors</p>
+                <p>Check the Profile</p>
               </div>
               <div class="icon">
-                <i class="ion ion-pie-graph"></i>
+              <i class="fas fa-user-circle"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="profile.php" class="small-box-footer">VIEW <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
         </div>
         <!-- /.row -->
 
-        <!-- main row -->
+        <!-- row -->
         <div class="row">
-          <section class="col-lg-6 connectedSortable">
-              <!-- Calendar -->
-              <div class="card bg-gradient-info">
-                <div class="card-header border-0">
-
-                  <h3 class="card-title">
-                    <i class="far fa-calendar-alt"></i>
-                    Calendar
-                  </h3>
-                  <!-- tools card -->
-                  <div class="card-tools">
-                    <!-- button with a dropdown -->
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-info btn-sm dropdown-toggle" data-toggle="dropdown" data-offset="-52">
-                        <i class="fas fa-bars"></i>
-                      </button>
-                      <div class="dropdown-menu" role="menu">
-                        <a href="#" class="dropdown-item">Add new event</a>
-                        <a href="#" class="dropdown-item">Clear events</a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">View calendar</a>
-                      </div>
+            <div class="col-md-12">
+                <div class="card card-info">
+                    <div class="row">
+                        <div class="card-body" style="padding: 30px 150px;">
+                            <div style="text-align: center;">
+                                <h5 style="margin-bottom:33px; font-size: 33px;">Welcome <?php echo $fname . ' ' . $lname ?></h5>
+                                <i class="fas fa-user fa-5x text-dark" style="margin-bottom:33px;"></i>
+                                <p style="font-size: 23px;">  
+                                    Welcome to the Micro Finance Web Application
+                                </p>
+                                <p>
+                                We are delighted to welcome you to <b>MicroFinApp!</b> Your dashboard is your gateway to managing and accessing all the powerful features and tools our system has to offer.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <button type="button" class="btn btn-warning btn-sm" data-card-widget="collapse">
-                      <i class="fas fa-minus"></i>
-                    </button>
-                    <button type="button" class="btn btn-danger btn-sm" data-card-widget="remove">
-                      <i class="fas fa-times"></i>
-                    </button>
-                  </div>
-                  <!-- /. tools -->
                 </div>
-                <!-- /.card-header -->
-                <div class="card-body pt-0">
-                  <!--The calendar -->
-                  <div id="calendar" style="width: 100%"></div>
-                </div>
-                <!-- /.card-body -->
-              </div>
-              <!-- /.card -->
-          </section>
+                <!-- /.card -->
+            </div>
+            <!--/.col-->
         </div>
-        <!-- /. main row -->
+        <!-- /.row -->
 
       </div><!-- /.container-fluid -->
     </section>

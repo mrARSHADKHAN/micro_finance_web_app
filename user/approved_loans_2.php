@@ -17,7 +17,6 @@
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Loans</a></li>
               <li class="breadcrumb-item active">Approved Loans</li>
-              <li class="breadcrumb-item active">Loan 1</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -39,6 +38,8 @@
 
             if ($result->num_rows > 0) {
                 $row = mysqli_fetch_assoc($result);
+
+                $t_installment = $row['installments'];
         ?>
 
 
@@ -94,7 +95,7 @@
                     <!-- <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-users"></i></span> -->
 
                     <div class="info-box-content">
-                        <span class="info-box-text">Due Date :</span>
+                        <span class="info-box-text">Due Period :</span>
                         <span class="info-box-number"><?php echo $row['due_date'] ?></span>
                     </div>
                     <!-- /.info-box-content -->
@@ -136,10 +137,36 @@
                     <div class="col-sm-3 col-6">
                         <div class="description-block">
                         <?php
-                            echo "<form method='POST' action='approved_loans_3.php'>";
-                            echo "<input type='hidden' name='loan_ref_num' value='{$row['loan_ref_num']}'>";
-                            echo "<button type='submit' class='btn btn-block bg-gradient-warning font-weight-bold'>Pay Now</button>";
-                            echo "</form></p>";
+
+                            $t_amt    = $row['loan_amt'];
+                            $paid_amt = $row['paid'];
+
+                            // Calculate the percentage
+                            $percentage = round(($paid_amt / $t_amt) * 100);
+
+                            $user_id = $_SESSION['user_id'];
+
+                            $sql2 = "SELECT * FROM card WHERE user_id='$user_id'";
+                            $result2 = $con->query($sql2);
+
+                            if ($result2->num_rows > 0) {
+                                $row2 = mysqli_fetch_assoc($result2);
+
+                                echo "<form method='POST' action='approved_loans_3.php'>";
+                                echo "<input type='hidden' name='loan_ref_num' value='{$row['loan_ref_num']}'>";
+                                if($paid_amt >= $t_amt){
+                                    // $disabled = 'disabled';
+                                    echo "<a class='btn btn-block bg-gradient-light font-weight-bold'>Loan Completed <i class='fas fa-check-circle text-success' style='margin-left:10px;'></i></a>";
+                                } else {
+                                    // $disabled = '';
+                                    echo "<button type='submit' class='btn btn-block bg-gradient-warning font-weight-bold'>Pay Now</button>";
+                                }
+                                echo "</form></p>";
+
+                            }
+                            else {
+                                echo "<a type='submit' href='cards.php' class='btn btn-block bg-gradient-danger font-weight-bold'>Setup Pay Method</a>";
+                            }
                         ?>
                         <!-- <button type="button" class="btn btn-block bg-gradient-warning font-weight-bold">Pay Now</button> -->
                         <!-- <a href="#" class="btn btn-block bg-gradient-warning font-weight-bold">Pay Now</a> -->
@@ -152,17 +179,6 @@
                 <!-- /.card-header -->
             </div>
 
-
-            <?php 
-                
-                $t_amt    = $row['loan_amt'];
-                $paid_amt = $row['paid'];
-
-                // Calculate the percentage
-                $percentage = ($paid_amt / $t_amt) * 100;
-             
-            ?>
-
             <div class="row">
                 <div class="col-5">
                     <div class="card">
@@ -170,7 +186,7 @@
                             <div class="row">
                                 <div class="col-12 text-center">
                                     <input type="text" class="knob" data-thickness="0.2" data-angleArc="250" data-angleOffset="-125"
-                                    value="<?php echo $percentage ?>" data-width="250" data-height="250" data-fgColor="#009933" data-readonly="true">
+                                    value="<?php echo $percentage ?>" data-width="250" data-height="250" data-fgColor="#009933" data-readonly="true" style="outline: none;">
 
                                     <div class="knob-label"><strong>Payment Progress (%)</strong></div>
                                 </div>
@@ -195,93 +211,59 @@
                         </div> -->
                         <div class="card-body table-responsive p-0">
                             <table class="table table-striped table-valign-middle">
-                            <thead>
-                            <tr>
-                                <th>Product</th>
-                                <th>Price</th>
-                                <th>Sales</th>
-                                <th>More</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>
-                                <img src="" alt="Product 1" class="img-circle img-size-32 mr-2">
-                                Some Product
-                                </td>
-                                <td>$13 USD</td>
-                                <td>
-                                <small class="text-success mr-1">
-                                    <i class="fas fa-arrow-up"></i>
-                                    12%
-                                </small>
-                                12,000 Sold
-                                </td>
-                                <td>
-                                <a href="#" class="text-muted">
-                                    <i class="fas fa-search"></i>
-                                </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                <img src="" alt="Product 1" class="img-circle img-size-32 mr-2">
-                                Another Product
-                                </td>
-                                <td>$29 USD</td>
-                                <td>
-                                <small class="text-warning mr-1">
-                                    <i class="fas fa-arrow-down"></i>
-                                    0.5%
-                                </small>
-                                123,234 Sold
-                                </td>
-                                <td>
-                                <a href="#" class="text-muted">
-                                    <i class="fas fa-search"></i>
-                                </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                <img src="" alt="Product 1" class="img-circle img-size-32 mr-2">
-                                Amazing Product
-                                </td>
-                                <td>$1,230 USD</td>
-                                <td>
-                                <small class="text-danger mr-1">
-                                    <i class="fas fa-arrow-down"></i>
-                                    3%
-                                </small>
-                                198 Sold
-                                </td>
-                                <td>
-                                <a href="#" class="text-muted">
-                                    <i class="fas fa-search"></i>
-                                </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                <img src="" alt="Product 1" class="img-circle img-size-32 mr-2">
-                                Perfect Item
-                                <span class="badge bg-danger">NEW</span>
-                                </td>
-                                <td>$199 USD</td>
-                                <td>
-                                <small class="text-success mr-1">
-                                    <i class="fas fa-arrow-up"></i>
-                                    63%
-                                </small>
-                                87 Sold
-                                </td>
-                                <td>
-                                <a href="#" class="text-muted">
-                                    <i class="fas fa-search"></i>
-                                </a>
-                                </td>
-                            </tr>
-                            </tbody>
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th style="text-align: center;">Installment</th>
+                                        <th>Date</th>
+                                        <th>Paid</th>
+                                        <th>Balance</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                <?php
+                                    $user_id = $_SESSION['user_id'];
+
+                                    $sql5 = "SELECT * FROM payments WHERE user_id='$user_id' AND loan_ref_num='$loan_ref_num'";
+                                    $result5 = $con->query($sql5);
+
+                                    if ($result5->num_rows > 0) {
+                                        while($row5 = mysqli_fetch_assoc($result5)){
+                                ?>
+                                    <tr>
+                                        <td>
+                                            <?php echo $row5['pay_id'] ?>
+                                        </td>
+                                        <td style="text-align: center;">
+                                            <?php echo $row5['current_ins'] . ' X ' . $t_installment ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $row5['date_paid'] ?>
+                                        </td>
+                                        <td>
+                                            Rs. <?php echo $row5['paid_amt'] ?>
+                                        </td>
+                                        <td>
+                                            Rs. <?php echo $row5['balance_amt'] ?>
+                                        </td>
+                                    </tr>
+                            <?php
+                                     }
+                                    }
+                                    else{
+                            ?>
+
+                                    <tr>
+                                        <td colspan='7'>
+                                            <h3 class="text-center">No Records Found</h3>
+                                        </td>
+                                    </tr>
+                            <?php 
+                                    }
+                            ?>
+
+                                </tbody>
                             </table>
                         </div>
                     </div>

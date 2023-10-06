@@ -23,8 +23,9 @@ if ($result->num_rows == 1) {
     header('Location: http://localhost/websites/micro_finance_web_app');
 
 } else {
-    echo ('Somethings Wrong, Try again ');
+    // echo ('Somethings Wrong, Try again ');
     // header ('location:javascript://history.go(-1)');
+    header('Location: http://localhost/websites/micro_finance_web_app/?status=no_user');
 }
 $con->close();
 
