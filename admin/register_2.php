@@ -41,10 +41,6 @@
         $rs = $con->query($sql);
 
         if($rs>0){
-            $_SESSION['user_id']    = $user_id;
-            $_SESSION['fname']      = $fname;
-            $_SESSION['lname']      = $lname;
-            
             header("location:dashboard.php");
         }
         else{

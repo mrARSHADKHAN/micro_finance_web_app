@@ -11,12 +11,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Customers List</h1>
+            <h1 class="m-0">Loan Payments</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Customers</a></li>
-              <li class="breadcrumb-item active">Customers List</li>
+              <li class="breadcrumb-item"><a href="#">Payments</a></li>
+              <li class="breadcrumb-item active">Loan Payments</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -30,7 +30,7 @@
           <!-- Default box -->
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Customers List</h3>
+              <h3 class="card-title">List</h3>
 
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -46,22 +46,22 @@
                   <thead>
                         <tr>
                           <th style="width: 20%">
+                              Reference No.
+                          </th>
+                          <th style="width: 20%">
                               User ID
                           </th>
-                          <th style="width: 15%">
-                              Full Name
+                          <th style="width: 20%">
+                              Paid
                           </th>
-                          <th style="width: 15%">
-                              NIC
+                          <th style="width: 20%">
+                              Balance
                           </th>
-                          <th>
-                              Address
+                          <th style="width: 20%">
+                              Date
                           </th>
-                          <th style="width: 15%">
-                              City
-                          </th>
-                          <th style="width: 15%">
-                              Contact
+                          <th style="width: 20%" class="text-center">
+                              Installment
                           </th>
                         </tr>
                   </thead>
@@ -70,9 +70,7 @@
                         <?php
                             require_once("../engine/_db.php");
 
-                            $user_id = $_SESSION['user_id'];
-
-                            $sql = "SELECT * FROM customer";
+                            $sql = "SELECT * FROM payments";
                             $result = $con->query($sql);
 
                             if ($result->num_rows > 0) {
@@ -80,23 +78,22 @@
                         ?>
                                     <tr>
                                         <td>
-                                            <a href="loan_list.php?user_id=<?php echo $row['user_id'] ?>"><?php echo $row['user_id'] ?></a>
+                                            <?php echo $row['loan_ref_num'] ?>
                                         </td>
                                         <td>
-                                            <a><?php echo $row['FirstName'] ?></a>
-                                            <?php echo $row['Surname'] ?>
+                                            <?php echo $row['user_id'] ?>
                                         </td>
                                         <td>
-                                            <a><?php echo $row['nic'] ?></a>
+                                            <a>Rs. <?php echo $row['paid_amt'] ?></a>
                                         </td>
                                         <td>
-                                            <a><?php echo $row['Address'] ?></a>
+                                            <a>Rs. <?php echo $row['balance_amt'] ?></a>
                                         </td>
-                                        <td>
-                                        <a><?php echo $row['City'] ?></a>
+                                        <td class="project_progress">
+                                            <?php echo $row['due_date'] ?>
                                         </td>
-                                        <td>
-                                        <a><?php echo $row['mobile'] ?></a>
+                                        <td class="project-state">
+                                            <?php echo $row['current_ins'] ?>
                                         </td>
                                     </tr>
                         <?php       

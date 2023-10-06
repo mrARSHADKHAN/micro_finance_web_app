@@ -11,12 +11,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">History</h1>
+            <h1 class="m-0">Approved Loans</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Customers</a></li>
-              <li class="breadcrumb-item active">History</li>
+              <li class="breadcrumb-item active">Approved Loans</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -77,10 +77,14 @@
 
                             if ($result->num_rows > 0) {
                                 while($row = mysqli_fetch_assoc($result)){
+
+                                  $loan_ref_num = $row['loan_ref_num'];
                         ?>
                                     <tr>
                                         <td>
-                                            <?php echo $row['loan_ref_num'] ?>
+                                            <a href="approved_loans_2.php?loan_ref_num=<?php echo $row['loan_ref_num'] ?>&user_id=<?php echo $row['user_id'] ?>">
+                                              <?php echo $row['loan_ref_num'] ?>
+                                            </a>
                                         </td>
                                         <td>
                                             <?php echo $row['user_id'] ?>
@@ -93,15 +97,32 @@
                                         <td>
                                             <a>Rs. <?php echo $row['loan_amt'] ?></a>
                                         </td>
+                                        <?php
+
+                                            $sql4 = "SELECT * FROM approved_loans WHERE loan_ref_num='$loan_ref_num'";
+                                            $result4 = $con->query($sql4);
+
+                                            if ($result4->num_rows > 0) {
+                                            $row4 = mysqli_fetch_assoc($result4);
+
+                                            $t_amt    = $row4['loan_amt'];
+                                            $paid_amt = $row4['paid'];
+
+                                            // Calculate the percentage
+                                            $percentage = round(($paid_amt / $t_amt) * 100);
+                                        ?>
                                         <td class="project_progress">
                                             <div class="progress progress-sm">
-                                                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="<?php echo $row['percent'] ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['percent'] ?>%">
+                                                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="<?php echo $percentage ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $percentage ?>%">
                                                 </div>
                                             </div>
                                             <small>
-                                            <?php echo $row['percent'] ?>% Complete
+                                            <?php echo $percentage ?>% Complete
                                             </small>
                                         </td>
+                                        <?php
+                                            }
+                                        ?>
                                         <td class="project-state">
                                             <?php
                                                 $status = intval($row['approve']);

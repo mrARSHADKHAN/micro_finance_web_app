@@ -51,7 +51,7 @@ $loan_req = mysqli_num_rows($sr);
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Dashboard
-                <span class="right badge badge-danger">New</span>
+                <!-- <span class="right badge badge-danger">New</span> -->
               </p>
             </a>
           </li>
@@ -110,12 +110,12 @@ $loan_req = mysqli_num_rows($sr);
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="loan_payments.php" class="nav-link">
                   <i class="far fa-fw nav-icon"></i>
                   <p>Loan Payments</p>
                 </a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-fw nav-icon"></i>
                   <p>Pay</p>
@@ -126,10 +126,12 @@ $loan_req = mysqli_num_rows($sr);
                   <i class="far fa-fw nav-icon"></i>
                   <p>Manage Payments</p>
                 </a>
-              </li>
+              </li> -->
               
             </ul>
-          </li>
+          </li> 
+
+          <li class="nav-header">Help</li>
 
           <li class="nav-item">
             <a href="#" class="nav-link">
@@ -146,35 +148,42 @@ $loan_req = mysqli_num_rows($sr);
                   <p>FAQs</p>
                 </a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a href="contact_us.php" class="nav-link">
                   <i class="far fa-fw nav-icon"></i>
                   <p>Contact Us</p>
                 </a>
-              </li>
-              <li class="nav-item">
+              </li> -->
+              <!-- <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-fw nav-icon"></i>
                   <p>Help</p>
                 </a>
-              </li>
+              </li> -->
               
             </ul>
           </li>
 
-          <li class="nav-header">Tools</li>
-
+          <li class="nav-header">Accounts</li>
           <li class="nav-item">
-            <a href="pages/calendar.html" class="nav-link">
-              <i class="nav-icon far fa-calendar-alt"></i>
+            <a href="users.php" class="nav-link">
+              <i class="fas fa-users nav-icon"></i>
               <p>
-                Calendar
-                <span class="badge badge-info right">2</span>
+                Users
               </p>
             </a>
           </li>
 
-          <li class="nav-header">Account</li>
+          <li class="nav-item">
+            <a href="register.php" class="nav-link">
+              <i class="fas fa-lock nav-icon"></i>
+              <p>
+                Add Admins
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-header">Manage</li>
           <li class="nav-item">
             <a href="profile.php" class="nav-link">
               <i class="fas fa-user nav-icon"></i>
@@ -184,7 +193,7 @@ $loan_req = mysqli_num_rows($sr);
             </a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item" onclick="return confirm('Are you sure you want to logout?')">
             <a href="../engine/logoffuser.php" class="nav-link">
               <i class="fas fa-power-off nav-icon"></i>
               <p>

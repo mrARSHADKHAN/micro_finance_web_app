@@ -45,7 +45,7 @@
               <table class="table table-striped projects">
                   <thead>
                         <tr>
-                          <th style="width: 15%">
+                          <th style="width: 20%">
                               Reference No.
                           </th>
                           <th style="width: 20%">
@@ -57,8 +57,8 @@
                           <th style="width: 20%">
                               Loan Amount
                           </th>
-                          <th>
-                              Progress
+                          <th style="width: 20%">
+                              Date
                           </th>
                           <th style="width: 20%" class="text-center">
                               Status
@@ -87,20 +87,12 @@
                                         </td>
                                         <td>
                                             <a><?php echo $row['loan_typ'] ?></a>
-                                            <br/>
-                                            <small>Date : <?php echo $row['loan_date'] ?></small>
                                         </td>
                                         <td>
                                             <a>Rs. <?php echo $row['loan_amt'] ?></a>
                                         </td>
                                         <td class="project_progress">
-                                            <div class="progress progress-sm">
-                                                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="<?php echo $row['percent'] ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['percent'] ?>%">
-                                                </div>
-                                            </div>
-                                            <small>
-                                            <?php echo $row['percent'] ?>% Complete
-                                            </small>
+                                            <?php echo $row['loan_date'] ?>
                                         </td>
                                         <td class="project-state">
                                             <?php
@@ -111,6 +103,8 @@
                                                     echo '<span class="badge badge-success">Approved</span>';
                                                 } elseif ($status === 2) {
                                                     echo '<span class="badge badge-danger">Rejected</span>';
+                                                } elseif ($status === 3) {
+                                                  echo '<span class="badge badge-light">Completed</span>';
                                                 }
                                             ?>
                                         </td>

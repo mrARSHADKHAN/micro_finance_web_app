@@ -11,12 +11,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Customers List</h1>
+            <h1 class="m-0">Users</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Customers</a></li>
-              <li class="breadcrumb-item active">Customers List</li>
+              <li class="breadcrumb-item"><a href="#">Accounts</a></li>
+              <li class="breadcrumb-item active">Users</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -30,7 +30,7 @@
           <!-- Default box -->
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Customers List</h3>
+              <h3 class="card-title">List</h3>
 
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -45,23 +45,17 @@
               <table class="table table-striped projects">
                   <thead>
                         <tr>
+                          <th style="width: 35%">
+                              Email
+                          </th>
                           <th style="width: 20%">
-                              User ID
+                              First Name
                           </th>
-                          <th style="width: 15%">
-                              Full Name
+                          <th style="width: 20%">
+                              Last Name
                           </th>
-                          <th style="width: 15%">
-                              NIC
-                          </th>
-                          <th>
-                              Address
-                          </th>
-                          <th style="width: 15%">
-                              City
-                          </th>
-                          <th style="width: 15%">
-                              Contact
+                          <th style="width: 25%">
+                              Joined Date
                           </th>
                         </tr>
                   </thead>
@@ -70,9 +64,7 @@
                         <?php
                             require_once("../engine/_db.php");
 
-                            $user_id = $_SESSION['user_id'];
-
-                            $sql = "SELECT * FROM customer";
+                            $sql = "SELECT * FROM tbl_users";
                             $result = $con->query($sql);
 
                             if ($result->num_rows > 0) {
@@ -80,23 +72,16 @@
                         ?>
                                     <tr>
                                         <td>
-                                            <a href="loan_list.php?user_id=<?php echo $row['user_id'] ?>"><?php echo $row['user_id'] ?></a>
+                                            <?php echo $row['email'] ?>
                                         </td>
                                         <td>
-                                            <a><?php echo $row['FirstName'] ?></a>
-                                            <?php echo $row['Surname'] ?>
+                                            <?php echo $row['fname'] ?>
                                         </td>
                                         <td>
-                                            <a><?php echo $row['nic'] ?></a>
+                                            <?php echo $row['lname'] ?>
                                         </td>
                                         <td>
-                                            <a><?php echo $row['Address'] ?></a>
-                                        </td>
-                                        <td>
-                                        <a><?php echo $row['City'] ?></a>
-                                        </td>
-                                        <td>
-                                        <a><?php echo $row['mobile'] ?></a>
+                                            <a><?php echo $row['Joining'] ?></a>
                                         </td>
                                     </tr>
                         <?php       
