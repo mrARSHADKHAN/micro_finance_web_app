@@ -46,8 +46,8 @@ document.querySelectorAll('.nav-link').forEach(function(link) {
         var grandGrandparentLi = grandparentUl.parentNode; // Get the grandparent (ul)
         grandGrandparentLi.classList.add('menu-open');
 
-        var myLink = document.getElementById('nav_item');
-        myLink.classList.add('active');
+        // var myLink = document.getElementById('nav_item');
+        // myLink.classList.add('active');
     }
 
 });

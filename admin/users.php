@@ -54,8 +54,11 @@
                           <th style="width: 20%">
                               Last Name
                           </th>
-                          <th style="width: 25%">
+                          <th style="width: 30%">
                               Joined Date
+                          </th>
+                          <th style="width: 10%">
+                              Role
                           </th>
                         </tr>
                   </thead>
@@ -82,6 +85,9 @@
                                         </td>
                                         <td>
                                             <a><?php echo $row['Joining'] ?></a>
+                                        </td>
+                                        <td>
+                                            <a><?php echo $row['role'] ?></a>
                                         </td>
                                     </tr>
                         <?php       

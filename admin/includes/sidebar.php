@@ -47,7 +47,7 @@ $loan_req = mysqli_num_rows($sr);
                with font-awesome or any other icon font library -->
           
           <li class="nav-item">
-            <a href="dashboard.php" class="nav-link ">
+            <a href="dashboard.php" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Dashboard

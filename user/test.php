@@ -1,5 +1,6 @@
 <?php
-$percentage = round((3333.34 / 20000) * 100);
+$balance = 10.50; // Replace this with your actual balance value
 
-echo $percentage; 
+// Display only positive values or zero
+echo max(0, $balance);
 ?>

@@ -16,7 +16,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="../default.php">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard</li>
+              <li class="breadcrumb-item">Dashboard</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -26,71 +26,194 @@
 
     <section class="content">
       <div class="container-fluid">
-        <!-- Small boxes (Stat box) -->
+
+        <!-- row -->
         <div class="row">
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3>150</h3>
-
-                <p>New Orders</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            <div class="col-md-12">
+                <div class="card card-info">
+                    <div class="row">
+                        <div class="card-body" style="padding: 30px 150px;">
+                            <div style="text-align: center;">
+                                <h5 style="margin-bottom:33px; font-size: 33px;">Welcome <?php echo $fname?>!</h5>
+                                <p style="font-size: 23px;">  
+                                    Admin Panel of Micro Finance Web Application
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.card -->
             </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success">
-              <div class="inner">
-                <h3>53<sup style="font-size: 20px">%</sup></h3>
-
-                <p>Bounce Rate</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-warning">
-              <div class="inner">
-                <h3>44</h3>
-
-                <p>User Registrations</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-person-add"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-danger">
-              <div class="inner">
-                <h3>65</h3>
-
-                <p>Unique Visitors</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-pie-graph"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
+            <!--/.col-->
         </div>
         <!-- /.row -->
 
+        <?php
+            require_once("../engine/_db.php");
+
+            $sql      = "SELECT * FROM loan";
+            $r1 = $con->query($sql);
+            $tot_loan = $r1->num_rows;
+
+            $sql2      = "SELECT * FROM loan WHERE approve='1'";
+            $r2 = $con->query($sql2);
+            $app_loan = $r2->num_rows;
+
+            $sql3      = "SELECT * FROM loan WHERE approve='2'";
+            $r3 = $con->query($sql3);
+            $rej_loan = $r3->num_rows;
+
+            $sql4      = "SELECT * FROM loan WHERE approve='0'";
+            $r4 = $con->query($sql4);
+            $pen_loan = $r4->num_rows;
+
+            $sql8      = "SELECT * FROM customer";
+            $r8 = $con->query($sql8);
+            $tot_cus = $r8->num_rows;
+        ?>
+
+        <!-- Info boxes -->
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box">
+              <span class="info-box-icon bg-info elevation-1"><i class="fas fa-dollar-sign"></i></span>
+
+              <div class="info-box-content">
+              <a href="history.php" style="color: #000;"><span class="info-box-text">Total Loans</span></a>
+                <span class="info-box-number">
+                  <?php echo $tot_loan ?>
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box mb-3">
+              <span class="info-box-icon bg-success elevation-1"><i class="fas fa-check-circle"></i></span>
+
+              <div class="info-box-content">
+              <a href="approved_loans.php" style="color: #000;"><span class="info-box-text">Loans Approved</span></a>
+                <span class="info-box-number">
+                  <?php echo $app_loan ?>
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+
+          <!-- fix for small devices only -->
+          <div class="clearfix hidden-md-up"></div>
+
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box mb-3">
+              <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-times-circle"></i></span>
+
+              <div class="info-box-content">
+                <a href="rejected_loans.php" style="color: #000;"><span class="info-box-text">Loans Rejected</span></a>
+                <span class="info-box-number">
+                  <?php echo $rej_loan ?>
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box mb-3">
+              <span class="info-box-icon bg-warning elevation-1"><i class="far fa-clock"></i></span>
+
+              <div class="info-box-content">
+              <a href="loan_request.php" style="color: #000;"><span class="info-box-text">Loans Pending</span></a>
+                <span class="info-box-number">
+                  <?php echo $pen_loan ?>
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <?php
+                      $sql5 = "SELECT SUM(loan_amt) AS total_loans FROM approved_loans";
+                      $r5 = $con->query($sql5);
+
+                      if ($r5->num_rows > 0) {
+                          $row = mysqli_fetch_assoc($r5);
+                    ?>
+                          <div class="col-sm-3 col-6">
+                            <div class="description-block border-right">
+                              <h5 class="description-header">Rs. <?php echo number_format($row['total_loans'], 2, '.', ',') ?></h5>
+                              <span class="description-text">TOTAL LOAN</span>
+                            </div>
+                            <!-- /.description-block -->
+                          </div>
+                          <!-- /.col -->
+                    <?php
+                        }
+
+                      $sql6 = "SELECT SUM(paid) AS total_paid FROM approved_loans";
+                      $r6 = $con->query($sql6);
+
+                      if ($r6->num_rows > 0) {
+                          $row6 = mysqli_fetch_assoc($r6);
+                      ?>
+                            <div class="col-sm-3 col-6">
+                              <div class="description-block border-right">
+                                <h5 class="description-header">Rs. <?php echo number_format($row6['total_paid'], 2, '.', ',') ?></h5>
+                                <span class="description-text">TOTAL PAID</span>
+                              </div>
+                              <!-- /.description-block -->
+                            </div>
+                            <!-- /.col -->
+                      <?php
+                        }
+
+                          $sql7 = "SELECT SUM(due) AS total_bal FROM approved_loans";
+                          $r7 = $con->query($sql7);
+
+                          if ($r7->num_rows > 0) {
+                              $row7 = mysqli_fetch_assoc($r7);
+                          ?>
+                                <div class="col-sm-3 col-6">
+                                  <div class="description-block border-right">
+                                    <h5 class="description-header">Rs. <?php echo number_format($row7['total_bal'], 2, '.', ',') ?></h5>
+                                    <span class="description-text">TOTAL BALANCE</span>
+                                  </div>
+                                  <!-- /.description-block -->
+                                </div>
+                                <!-- /.col -->
+                        <?php
+                          }
+                        ?>
+                                <div class="col-sm-3 col-6">
+                                  <div class="description-block">
+                                    <h5 class="description-header"><?php echo $tot_cus ?></h5>
+                                    <span class="description-text">TOTAL CUSTOMERS</span>
+                                  </div>
+                                  <!-- /.description-block -->
+                                </div>
+                                <!-- /.col -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!-- /.card-footer -->
+            </div>
+          </div>
+        </div>
+        <!-- /.row -->
 
       </div><!-- /.container-fluid -->
     </section>

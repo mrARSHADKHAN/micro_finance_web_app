@@ -120,7 +120,7 @@
                     <!-- /.col -->
                     <div class="col-sm-3 col-6">
                         <div class="description-block border-right text-danger" >
-                        <h5 class="description-header">Rs. <?php echo $row['due'] ?></h5>
+                        <h5 class="description-header">Rs. <?php echo max(0, $row['due']) ?></h5>
                         <span class="description-text">DUE AMOUNT</span>
                         </div>
                         <!-- /.description-block -->
@@ -245,7 +245,7 @@
                                             Rs. <?php echo $row5['paid_amt'] ?>
                                         </td>
                                         <td>
-                                            Rs. <?php echo $row5['balance_amt'] ?>
+                                            Rs. <?php echo max(0, $row5['balance_amt']) ?>
                                         </td>
                                     </tr>
                             <?php

@@ -11,12 +11,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Users</h1>
+            <h1 class="m-0">Add Admin</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Accounts</a></li>
-              <li class="breadcrumb-item active">Users</li>
+              <li class="breadcrumb-item active">Add Admins</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -36,7 +36,7 @@
 
                     <div class="card">
                         <div class="card-body register-card-body">
-                        <p class="login-box-msg">Register a new Admin</p>
+                        <p class="login-box-msg">Add a new Admin</p>
 
                         <form action="register_2.php" method="POST">
                             <div class="input-group mb-3">
@@ -81,7 +81,7 @@
                             </div>
                             <div class="row">
                             <div class="col-12">
-                                <button type="submit" class="btn btn-primary btn-block">Register</button>
+                                <button type="submit" class="btn btn-primary btn-block">Add Admin</button>
                             </div>
                             <!-- /.col -->
                             </div>

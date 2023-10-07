@@ -19,3 +19,19 @@ for ($i = 1; $i <= $installments; $i++) {
 
 
 ?>
+
+
+<?php
+            require_once("../engine/_db.php");
+
+            // $sql = "SELECT SUM(amount_column) AS total_amount FROM loan";
+            $sql = "SELECT * FROM loan";
+            $result = $con->query($sql);
+
+            $row = $result->num_rows;
+            // $row = mysqli_fetch_assoc($result);
+
+            echo $row;
+
+            
+?>
