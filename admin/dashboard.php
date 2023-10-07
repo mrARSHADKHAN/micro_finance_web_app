@@ -189,7 +189,7 @@
                           ?>
                                 <div class="col-sm-3 col-6">
                                   <div class="description-block border-right">
-                                    <h5 class="description-header">Rs. <?php echo number_format($row7['total_bal'], 2, '.', ',') ?></h5>
+                                    <h5 class="description-header">Rs. <?php echo number_format(max(0, $row7['total_bal']), 2, '.', ',') ?></h5>
                                     <span class="description-text">TOTAL BALANCE</span>
                                   </div>
                                   <!-- /.description-block -->

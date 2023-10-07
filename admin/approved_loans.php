@@ -51,13 +51,13 @@
                           <th style="width: 20%">
                               User ID
                           </th>
-                          <th style="width: 20%">
+                          <th style="width: 15%">
                               Loan Type
                           </th>
-                          <th style="width: 20%">
+                          <th style="width: 15%">
                               Loan Amount
                           </th>
-                          <th>
+                          <th style="width: 15%">
                               Progress
                           </th>
                           <th style="width: 20%" class="text-center">

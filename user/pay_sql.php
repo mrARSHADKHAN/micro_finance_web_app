@@ -39,8 +39,19 @@
         $sql2 .= "'$balance_amt')";
 
         if ($con->query($sql2) === TRUE) {
-            // echo "New record created successfully";
-            header('Location: http://localhost/websites/micro_finance_web_app/user/pay_sql_2.php');
+
+                $sql_check = "select * from ratings where user_id='$user_id'";
+                $sr = $con->query($sql_check);
+
+                if(mysqli_num_rows($sr)>0){
+
+                    $sql5 = "UPDATE ratings SET rating = rating + 1 WHERE user_id = '$user_id'";
+
+                    if ($con->query($sql5) === TRUE) {
+                        // echo "New record created successfully";
+                        header('Location: http://localhost/websites/micro_finance_web_app/user/pay_sql_2.php');
+                    }
+                }
         } else {
             echo ("Error : " . $SQL . "<br>" . $con->error);
         }

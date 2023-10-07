@@ -78,8 +78,32 @@
             
             if ($con->query($sql3) === TRUE) {
 
-                // echo "New record created successfully";
-                header('Location: http://localhost/websites/micro_finance_web_app/user/apply_loan_3.php');
+                $sql_check = "select * from ratings where user_id='$user_id'";
+                $sr = $con->query($sql_check);
+
+                if(mysqli_num_rows($sr)>0){
+
+                    // echo "alredy user exits";
+                    $sql5 = "UPDATE ratings SET rating = rating + 1 WHERE user_id = '$user_id'";
+
+                    if ($con->query($sql5) === TRUE) {
+                        // echo "New record created successfully";
+                        header('Location: http://localhost/websites/micro_finance_web_app/user/apply_loan_3.php');
+                    }
+                }
+                else{
+
+                    // echo "no user exits";
+                    $sql4  = "insert into ratings (user_id,rating) values(";
+                    $sql4 .= "'$user_id',";
+                    $sql4 .= "'1')";
+
+                    if ($con->query($sql4) === TRUE) {
+                        // echo "New record created successfully";
+                        header('Location: http://localhost/websites/micro_finance_web_app/user/apply_loan_3.php');
+                    }
+
+                }
 
             } else {
                 echo ("Error : " . $SQL . "<br>" . $con->error);

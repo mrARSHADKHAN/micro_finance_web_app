@@ -33,7 +33,7 @@
           <div class="col-12 text-center d-flex align-items-center justify-content-center">
             <div class="">
               <h2>Micro<strong>Fin</strong>App</h2>
-              <p class="lead mb-5">123 Testing Ave, Testtown, 9876 NA<br>
+              <p class="lead">123 Testing Ave, Testtown, 9876 NA<br>
                 Phone: +1 234 56789012
               </p>
             </div>

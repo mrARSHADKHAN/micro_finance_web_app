@@ -87,7 +87,7 @@
                                             <a>Rs. <?php echo $row['paid_amt'] ?></a>
                                         </td>
                                         <td>
-                                            <a>Rs. <?php echo $row['balance_amt'] ?></a>
+                                            <a>Rs. <?php echo max(0, $row['balance_amt']) ?></a>
                                         </td>
                                         <td class="project_progress">
                                             <?php echo $row['due_date'] ?>
